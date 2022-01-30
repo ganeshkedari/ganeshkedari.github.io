@@ -85,8 +85,8 @@
   .book {
     cursor: pointer;
     display: block;
-    width: 150px;
-    height: 220px;
+    width: 150px !important;
+    height: 220px !important;
     position: relative;
     background: white;
     z-index: 1;
@@ -95,7 +95,7 @@
     transition: box-shadow 0.3s linear;
   }
   
-  .book img {
+  .book img  {
     width: inherit;
     height: inherit;
     transform-origin: 0 50%;
