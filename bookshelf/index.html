@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Travel | Bootstrap blog</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Swiper slider-->
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.theme.default.min.css">
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9QXNM5084"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K9QXNM5084');
+  </script>
+  <script src="components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+  <!-- Header-->
+  <header-component></header-component>
+  <!-- Destinations -->
+
+  <section class="pt-5">
+    <div class="container">
+      <h1>Currently Reading...</h1>
+      <p class="mb-0">So many books, so little time. - Frank Zappa</p>
+    </div>
+    <div class="swiper destinations-slider swiper-padding">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover"
+            href="BookReviews/TheImmortalsOfMeluha.html" style="background: url(img/BookCovers/immortalsofmeluha.png)">
+            <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+              <p class="small text-uppercase mb-0">Marathi</p>
+              <h2 class="h3 mb-4">The Immortals of Meluha</h2>
+              <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+            </div>
+          </a></div>
+        <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover"
+            href="#" style="background: url(img/BookCovers/RaiseTheTitanic.png)">
+            <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+              <p class="small text-uppercase mb-0">Dirk Pitt</p>
+              <h2 class="h3 mb-4">Raise the Titanic</h2>
+              <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+            </div>
+          </a></div>
+        <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover"
+            href="#" style="background: url(img/BookCovers/Attitudeiseverything.png)">
+            <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+              <p class="small text-uppercase mb-0">Self -Help</p>
+              <h2 class="h3 mb-4">Attitude Is Everything</h2>
+              <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+            </div>
+          </a></div>
+
+      </div>
+      <div class="swiper-button-prev swiper-custom-nav text-uppercase letter-spacing-0">
+        <svg class="svg-icon svg-icon me-1">
+          <use xlink:href="#arrow-left-1"> </use>
+        </svg><span class="text-sm">Prev</span>
+      </div>
+      <div class="swiper-button-next swiper-custom-nav text-uppercase letter-spacing-0"><span
+          class="text-sm">Next</span>
+        <svg class="svg-icon svg-icon ms-1">
+          <use xlink:href="#arrow-right-1"> </use>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- Instagram section-->
+  <section class="pb-5">
+    <div class="container pb-4">
+      <header class="text-center mb-5">
+        <h2>The Athenaeum</h2>
+        <p>Collection of Books I explored during this journey...!!!</p>
+      </header>
+      <!-- Bookshelf-->
+      <!-- <div class="bookshelf">
+        <div class="book-grid">
+          <ul>
+            <li> <img src="https://images-na.ssl-images-amazon.com/images/I/51uLvJlKpNL._SX321_BO1,204,203,200_.jpg"/></li>
+            <li> <img src="https://damonza.com/wp-content/uploads/portfolio/fiction/The-prophecy_03.jpg"/></li>
+            <li> <img src="https://i.pinimg.com/564x/f7/c8/12/f7c812c9b0296cd9f119e33a06d9a256.jpg"/></li>
+          </ul>
+        </div>
+        <div class="shelf-shadows"></div>
+        <div class="shelf"></div>
+      </div> -->
+
+      <!-- CSS Bookshelf -->
+      <ul class='list-inline'>
+        <li class='book'>
+          <img src='img/BookCovers/immortalsofmeluha.jpg' />
+        </li>
+
+        <li class='book'>
+          <img src='img/BookCovers/Attitudeiseverything.jpg' />
+        </li>
+
+        <li class='book'>
+          <img src='img/BookCovers/RaisetheTitanic.jpg' />
+        </li>
+      </ul>
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Top categories section -->
+  <!-- <section class="py-5 bg-light">
+    <div class="container py-4">
+      <header class="mb-5 text-center">
+        <h2>The league of extraordinary books</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </header>
+      <div class="row text-center gy-4">
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#food-1"> </use>
+            </svg>
+            <h3 class="h5">Restaurants</h3>
+            <p class="text-muted text-sm">Restaurants Destinations</p>
+          </a></div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#paper-bag-1"> </use>
+            </svg>
+            <h3 class="h5">Markets</h3>
+            <p class="text-muted text-sm">Markets Destinations</p>
+          </a></div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#special-price-1"> </use>
+            </svg>
+            <h3 class="h5">Low budget</h3>
+            <p class="text-muted text-sm">Low budget Destinations</p>
+          </a></div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#movie-camera-1"> </use>
+            </svg>
+            <h3 class="h5">Cinemas</h3>
+            <p class="text-muted text-sm">Cinemas Destinations</p>
+          </a></div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#beach-1"> </use>
+            </svg>
+            <h3 class="h5">Beaches</h3>
+            <p class="text-muted text-sm">Beaches Destinations</p>
+          </a></div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><a class="reset-anchor d-block" href="listing.html">
+            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
+              <use xlink:href="#camping-1"> </use>
+            </svg>
+            <h3 class="h5">Camping</h3>
+            <p class="text-muted text-sm">Camping Destinations</p>
+          </a></div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="bg-dark py-4">
+    <div class="container">
+      <div class="row py-2">
+        <div class="col-lg-4 text-center text-lg-left mb-2 mb-lg-0">
+          <p class="small text-muted text-uppercase mb-0">&copy; copyright 2020 - all rights reserved</p>
+        </div>
+        <div class="col-lg-4 text-center mb-2 mb-lg-0">
+          <ul class="list-inline text-white small mb-0">
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/ganeshkedari"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://twitter.com/ganesh_kedari"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/ganeshkedari/"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/in/ganeshkedari/"><i
+                  class="fab fa-linkedin"></i></a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center text-lg-right">
+          <p class="small text-muted text-uppercase mb-0">Template designed by <a
+              href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Temple</a>. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="js/front.js"></script>
+  <script>
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite - 
+    //   see more here 
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
+
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", path, true);
+      ajax.send();
+      ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.className = 'd-none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
+    }
+    // this is set to BootstrapTemple website as you cannot 
+    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+    // while using file:// protocol
+    // pls don't forget to change to your domain :)
+    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+
+  </script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+</html>

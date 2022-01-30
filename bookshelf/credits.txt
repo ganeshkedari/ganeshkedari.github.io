@@ -1,0 +1,20 @@
+------------------------------------------
+ CREDITS
+------------------------------------------
+
+    - Bootstrap 5     -    https://getbootstrap.com
+
+    - Font Awesome    -    https://fontawesome.com
+
+    - Orion Icons    -    https://orioniconlibrary.com/
+
+    - Swiper.js       -    https://swiperjs.com/
+
+
+------------------------------------------
+    IMAGES
+------------------------------------------
+
+    - All image credits go to www.pexels.com and available to use under their license.
+
+    - Logos & Brands  - https://www.freepik.com/
