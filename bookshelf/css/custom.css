@@ -1,39 +1,44 @@
 /* your styles go here */
 
+
 /* Big Bookshelf */
+
 .bookshelf {
     width: 900px;
     margin: 5rem auto;
     text-align: center;
     position: relative;
-  }
-  
-  .book-grid {
+}
+
+.book-grid {
     z-index: 2;
     position: relative;
     -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-  }
-  .book-grid ul {
+    transform: translateY(-15px);
+}
+
+.book-grid ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .book-grid ul li {
+}
+
+.book-grid ul li {
     justify-self: center;
-  }
-  .book-grid ul img {
+}
+
+.book-grid ul img {
     display: block;
     box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3);
     width: 200px;
     height: 300px;
     -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .shelf-shadows {
+    object-fit: cover;
+}
+
+.shelf-shadows {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -42,9 +47,9 @@
     border-radius: 2px;
     z-index: 1;
     box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
-  }
-  
-  .shelf {
+}
+
+.shelf {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,36 +58,39 @@
     background-color: #f9f9f9;
     border-radius: 2px;
     z-index: 3;
-  }
+}
 
 
-  /* CSS Bookshelf */
-  .book::after,
-  .book::before, .book img, .book {
+/* CSS Bookshelf */
+
+.book::after,
+.book::before,
+.book img,
+.book {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-  }
-  
- 
-  
-  ul {
+}
+
+ul {
     display: table-cell;
     vertical-align: middle;
-  }
-  
-  .list-inline {
+}
+
+.list-inline {
     padding-left: 0;
     list-style: none;
-  }
-  .list-inline > li {
+}
+
+.list-inline>li {
     display: inline-block;
     margin-left: 2em;
-  }
-  .list-inline > li:first-child {
+}
+
+.list-inline>li:first-child {
     margin-left: 0;
-  }
-  
-  .book {
+}
+
+.book {
     cursor: pointer;
     display: block;
     width: 150px !important;
@@ -93,26 +101,35 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 9px 20px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
     transition: box-shadow 0.3s linear;
-  }
-  
-  .book img  {
+}
+
+.book a {
     width: inherit;
     height: inherit;
     transform-origin: 0 50%;
     transform: rotateY(0);
     transition: all 0.45s ease;
-  }
-  
-  .book:hover {
+}
+
+.book img {
+    width: inherit;
+    height: inherit;
+    transform-origin: 0 50%;
+    transform: rotateY(0);
+    transition: all 0.45s ease;
+}
+
+.book:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 9px 20px 0 rgba(0, 0, 0, 0.45);
-  }
-  .book:hover img {
+}
+
+.book:hover img {
     transform: rotateY(-25deg);
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .book::after,
-  .book::before {
+}
+
+.book::after,
+.book::before {
     content: "";
     display: block;
     width: inherit;
@@ -122,12 +139,12 @@
     top: 0;
     background: white;
     border: 1px solid #d9d9d9;
-  }
-  
-  .book::before {
+}
+
+.book::before {
     left: -3px;
-  }
-  
-  .book::after {
+}
+
+.book::after {
     left: -6px;
-  }
+}

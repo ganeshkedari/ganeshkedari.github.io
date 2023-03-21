@@ -26,13 +26,7 @@ class Header extends HTMLElement {
           </div>
         </div>
         <!-- Navbar 1 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-          <div class="container text-center"><a class="navbar-brand mx-auto" href="index.html"><img class="mb-2"
-                src="img/geekyTalesLogo.png" alt="" width="340">
-              <!-- <p class="text-small text-uppercase text-gray mb-0">Your next pocket travel guide</p> -->
-            </a>
-          </div>
-        </nav>
+        
         <!-- Navbar 2 -->
         <nav class="navbar navbar-expand-lg navbar-light border-gray py-2 bg-light">
           <div class="container">
@@ -41,6 +35,9 @@ class Header extends HTMLElement {
               aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-1">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
                 <li class="nav-item px-1">
                   <a class="nav-link" href="#">Fiction</a>
                 </li>
@@ -72,7 +69,7 @@ class Header extends HTMLElement {
   
         
       </header>
-        `
+        `;
     }
 }
 
