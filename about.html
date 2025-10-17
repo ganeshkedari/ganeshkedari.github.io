@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ganesh Kedari</title>
+  <title>About - Ganesh Kedari</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,8 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9QXNM5084"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -36,26 +35,25 @@
 
   gtag('config', 'G-K9QXNM5084');
 </script>
- 
+
 </head>
 
-<body class="index-page">
+<body class="about-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/r2d2.png" alt="">
-      <h1 class="sitetitle">Atelier of a Geek</h1> </a>
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/r2d2.png" alt="">
+        <h1 class="sitetitle">Atelier of a Geek</h1> </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="travelogue/index.html" target="_blank">Travelogue</a></li>
           <li><a href="bookshelf/index.html" target="_blank">Athenaeum</a></li>
-
-
+       
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -72,43 +70,59 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-      <div class="container">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <!-- <span class="typed" data-typed-items="Coder , Data Mercenary, Geek"></span> -->
+         <h4>"Coder , Data Mercenary and a Geek"</h4>
+        
+      </div><!-- End Section Title -->
 
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Ganesh Kedari</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">I am a <span class="typed" data-typed-items="Coder , Data Mercenary, Geek"></span></h2>
-              <p data-aos="fade-up" data-aos-delay="400">I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.
-              </p> <p data-aos="fade-up" data-aos-delay="500" style="text-align: end;">&mdash; Sir Isaac Newton</p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-              </div>
-              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://x.com/ganesh_kedari"><i class="bi bi-twitter"></i></a>
-                <a href="www.linkedin.com/in/ganeshkedari"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/ganeshkedari/"><i class="bi bi-github"></i></a>
-            
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Intro + Photo -->
+        <div class="row align-items-top justify-content-between gy-5 mb-5">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+            <div class="intro-content">
+              <span class="eyebrow">Hello there</span>
+              <h2 class="headline">Hi, I'm Ganesh – a solution architect specializing in data & analytics, designing scalable AI-driven architectures and enabling end-to-end BI to AI transformation for global enterprises.</h2>
+              <p class="lead">
+                I help organizations move from Business Intelligence to AI-powered decision-making. With 16+ years in data & analytics, I design scalable solutions that blend cloud, AI/ML, and advanced analytics to deliver measurable business outcomes. What sets me apart is the ability to bridge technology and strategy — guiding executives on data roadmaps while mentoring teams to turn complex data into simple, actionable insights.
+              </p>
+              <!-- <p>
+                Integer posuere lacus in mi fringilla, eget luctus risus pulvinar. Curabitur a arcu a nisl tempus sagittis. Aenean varius, tortor sed porttitor dictum, augue eros viverra lectus, at efficitur magna lacus in risus.
+              </p> -->
+
+              <div class="cta-group">
+                <a href="#portfolio" class="btn-ghost">
+                  View My Work <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="#" class="link-underline">
+                  Download Resume <i class="bi bi-download"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/profile.PNG" alt="Sarah Mitchell" class="img-fluid">               
-                </div>
-              </div>
-            </div>
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+            <figure class="profile-figure text-center text-lg-end">
+              <img src="assets/img/profile/bg.png" alt="Ganesh Kedari" class="about-img">
+            </figure>
           </div>
         </div>
+        <!-- End Intro + Photo -->
+
+      
 
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    
 
   </main>
 
