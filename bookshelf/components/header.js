@@ -28,7 +28,7 @@ class Header extends HTMLElement {
         <!-- Navbar 1 -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
           <div class="container text-center"><a class="navbar-brand mx-auto" href="index.html"><img class="mb-2"
-                src="img/geekyTalesLogo.png" alt="" width="340">
+                src="img/The_Geeky_Tales.png" alt="Geeky Tales Logo">
               <!-- <p class="text-small text-uppercase text-gray mb-0">Your next pocket travel guide</p> -->
             </a>
           </div>

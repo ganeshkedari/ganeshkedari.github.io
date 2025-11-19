@@ -1,182 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Geeky Tales</title>
-    <meta name="description" content="">
+    <title>The Immortals of Meluha - The Geeky Tales</title>
+    
+    <!-- SEO & Social Media -->
+    <meta name="description" content="A review of 'The Immortals of Meluha' by Amish. A gripping tale of Shiva, the man who became a legend.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-    <!-- Swiper slider-->
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://www.yourwebsite.com/immortals-of-meluha-review">
+    <meta property="og:title" content="The Immortals of Meluha - Book Review">
+    <meta property="og:description" content="A gripping tale of Shiva, the man who became a legend.">
+    <meta property="og:image" content="../img/BookCovers/immortalsofmeluha.jpg">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../vendor/swiper/swiper-bundle.min.css">
-    <!-- Owl Carousel -->
     <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.theme.default.min.css">
-    <!-- Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
-    <!-- theme stylesheet-->
+    
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap">
+
+    <!-- Theme stylesheet -->
     <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="../css/custom.css">
-    <!-- Favicon-->
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.png">
-    <script src="pageheader.js" type="text/javascript" defer></script>
+
+    <!-- Web Components -->
+    <script src="pageheader.js" defer></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
+
+    <!-- Custom Styles for consistent branding -->
+    <style>
+        /* Consistent Gold Color */
+        .text-gold {
+            color: #ebaa3d !important;
+        }
+        .border-gold {
+            border-color: #ebaa3d !important;
+        }
+        
+        /* Drop Cap Style */
+        .drop-cap::first-letter {
+            font-family: 'Abril Fatface', serif;
+            float: left;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-right: 12px;
+            padding-top: 4px;
+            color: #ebaa3d;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header-->
+
+    <!-- Header -->
     <header-component></header-component>
 
     <section class="py-5">
         <div class="container text-center">
-            <p class="h6 mb-0 text-uppercase text-primary">Mythology</p>
-            <h1>The Immortals of Meluha</h1>
-            <p class="mb-3">Shiva Trilogy</p>
-
+            <p class="h6 mb-0 text-uppercase text-primary">Mythology & Fantasy</p>
+            <h1 class="display-4">The Immortals of Meluha</h1>
+            <p class="lead mb-3">Amish</p>
         </div>
-        <div><img class="py-5 w-100" src="postPics/immortalsofmeluha.jpg" alt=""></div>
+
         <div class="container">
-            <div class="row gy-5">
-                <div class="col-lg-8">
+            <div class="row gx-5 gy-5 align-items-start">
 
-                    <div class="px-lg-5 mb-5">
-                        <blockquote class="blockquote-custom">A man becomes a Mahadev only when he fights for what is right, not for what is easy.</blockquote>
+                <!-- LEFT: cover + actions -->
+                <aside class="col-lg-3 text-center text-lg-left">
+                    <div class="cover-card mb-4">
+                        <!-- Updated Image Name -->
+                        <img class="cover-img img-fluid shadow rounded" 
+                             src="../img/BookCovers/immortalsofmeluha.jpg" 
+                             alt="Book Cover of The Immortals of Meluha"
+                             width="300" height="450">
                     </div>
 
-                    <p class="lead first-letter-styled lh-4">Set in 1900 BC, The Immortals of Meluha is the first part of the Shiva Trilogy by Amish Tripathi. It reimagines the legend of Lord Shiva as a real human being — a brave tribal leader who migrates with his people to the near-perfect land of Meluha. This empire, founded by Lord Ram, faces an existential threat from the Chandravanshis and a mysterious disease spreading among its people. When destiny brings Shiva into Meluha, his choices and courage lead him to become the “Mahadev,” the destroyer of evil.</p>
-                    <div class="p-4 bg-light mb-5">  ⭐ Rating: 4.5 / 5 – A must-read for mythology and fantasy lovers.  </div>
-                    <p class="lead first-letter-styled lh-4">Amish crafts a refreshing blend of myth, history, and imagination, written in simple yet gripping language. The book takes a divine figure and turns him into a relatable human, which makes the story both spiritual and cinematic. Readers who love fast-paced storytelling, philosophical undercurrents, and Indian mythology presented in a modern voice will truly enjoy this one. It’s perfect for those new to Indian myth-fantasy fiction — accessible, dramatic, and full of heart.
-                        </p>
-                    
-                    
-                    <img class="img-fluid mb-4" src="postPics/meluha_ganga.jpg" alt="">
-                    
-                    
-                    <!-- <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata.</p> -->
-                    <h3 class="mb-4">Similar Books</h3>
-                    <ul class="list-check text-muted text-sm mb-5">
-                        <li class="mb-1">The Secret of the Nagas – Amish Tripathi</li>
-                        <li class="mb-1">Ajaya: Roll of the Dice – Anand Neelakantan</li>
-                        <li class="mb-1">Harappa: Curse of the Blood River – Vineet Bajpai</li>
-                        <li class="mb-1">The Palace of Illusions – Chitra Banerjee Divakaruni</li>
-                        <li class="mb-1">Sita: Warrior of Mithila – Amish Tripathi</li>
-                    </ul>
-                    <div class="p-4 bg-light mb-5">
+                    <div class="action-pill d-flex justify-content-center justify-content-lg-start">
+                        <!-- Accessibility: Added aria-label to the container -->
+                        <div class="rating-row d-flex align-items-center" aria-label="Rating: 4.5 out of 5 stars">
+                            <!-- Changed text-warning to custom text-gold -->
+                            <div class="stars text-gold me-2" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="rating-number font-weight-bold">4.5</div>
+                            <!-- Updated descriptive text -->
+                            <span class="small text-muted ms-2">Page Turner</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- RIGHT: main book content -->
+                <main class="col-lg-9">
+
+                    <!-- Popular Quote Block -->
+                    <div class="mb-5 px-lg-4">
+                        <div class="d-flex align-items-start">
+                            <!-- Vertical Line: Changed border-primary to border-gold -->
+                            <div class="border-start border-4 border-gold me-3" style="min-height: 80px;"></div>
+                            
+                            <!-- Icon and Text Container -->
+                            <div>
+                                <!-- Icon: Removed opacity-50, changed text-primary to text-gold -->
+                                <i class="fas fa-quote-left text-gold fa-3x mb-3"></i>
+                                <blockquote class="blockquote">
+                                    <p class="fst-italic mb-0 lead">“Whether a man is a legend or not is decided by history, not fortune tellers.”</p>
+                                    <footer class="blockquote-footer mt-2">Amish</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-desc mb-5">
+                        <div id="descText">
+                            <!-- Part 1: Overview (Added drop-cap class) -->
+                            <p class="drop-cap"><em>The Immortals of Meluha</em> transports us back to 1900 BC to the perfect empire of Meluha, created by Lord Ram. The story follows Shiva, a rough-hewn Tibetan tribal chief, who arrives in this land only to discover that he is the prophesied Neelkanth—the savior destined to rescue the Suryavanshis from their arch-enemies, the Chandravanshis and the Nagas. As Shiva accepts his destiny, he is thrust into a whirlwind of political intrigue, ancient wars, and moral dilemmas, forcing him to question the very nature of good and evil.</p>
+                            
+                            <!-- Part 2: Personal Opinion -->
+                            <p>This book is a fantastic blend of mythology and modern storytelling that kept me hooked from the first chapter. Amish does an incredible job of humanizing Lord Shiva, portraying him not as a distant god but as a relatable man with doubts, flaws, and a sense of humor. The narrative is fast-paced and action-packed, making it a true page-turner. While the language is simple and accessible, the philosophical questions it raises about karma, duty, and society are deeply thought-provoking. It is a perfect entry point for anyone looking to explore Indian mythology with a fresh, contemporary twist.</p>
+                        </div>
+                    </div>
+
+                    <!-- Genres -->
+                    <div class="p-4 bg-light rounded mb-5">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-2 pe-lg-2"><a class="tag reset-anchor" href="#!"><i
-                    class="fas fa-bookmark text-primary me-2"></i>Mythology</a></li>
-                            <li class="list-inline-item me-2 pe-lg-2"><a class="tag reset-anchor" href="#!"><i
-                    class="fas fa-bookmark text-primary me-2"></i>History</a></li>
-                            <li class="list-inline-item me-2 pe-lg-2"><a class="tag reset-anchor" href="#!"><i
-                    class="fas fa-bookmark text-primary me-2"></i>Shiva Triology</a></li>
+                            <li class="list-inline-item me-3">
+                                <a class="tag reset-anchor text-decoration-none" href="#!">
+                                    <i class="fas fa-bookmark text-primary me-2"></i>Mythology
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-3">
+                                <a class="tag reset-anchor text-decoration-none" href="#!">
+                                    <i class="fas fa-dragon text-primary me-2"></i>Fantasy
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="tag reset-anchor text-decoration-none" href="#!">
+                                    <i class="fas fa-history text-primary me-2"></i>Historical Fiction
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                </div>
-                <div class="col-lg-4">
-                    <!-- About me widget -->
-
-                    <!-- Categories widget -->
-
-                    <!-- Newsletter widget -->
-
-                    <!-- Latest posts widget -->
-                    <div class="mb-5">
-                        <h3 class="h5">Latest posts</h3>
-                        <!-- <p class="text-sm text-muted mb-4">Lorem ipsum dolor sit, consectetur adipisicing elit, sed do eiusmod.</p> -->
-                        <ul class="list-unstyled">
-                            <li class="d-flex mb-1">
-                                <a href="#"><img src="../img/BookCovers/immortalsofmeluha.jpg" alt="" width="80"></a>
-                                <div class="media-body ms-3">
-                                    <p class="small text-primary text-uppercase mb-0">Mythology</p>
-                                    <h6 class="mb-1"><a class="reset-anchor" href="TheImmortalsOfMeluha.html">The Immortals of Meluha</a></h6>
-                                    <p class="small text-muted">Shiva Trilogy</p>
+                    <!-- Sidebar / Related Books -->
+                    <div class="col-lg-12"> 
+                        <div class="mb-5">
+                            <h3 class="h5 mb-4">Similar Books</h3>
+                            <div class="d-flex flex-row overflow-auto pb-3">
+                                
+                                <!-- Similar Book 1 -->
+                                <div class="d-flex mb-1 me-4" style="min-width: 250px;">
+                                    <a href="Secreateofnagas.html">
+                                        <!-- Updated to specific placeholder URL -->
+                                        <img src="../img/BookCovers/SecreateOfNagas.jpg" 
+                                             alt="The Secret of the Nagas Cover" 
+                                             class="shadow-sm rounded"
+                                             width="80" height="120" loading="lazy">
+                                    </a>
+                                    <div class="ms-3">
+                                        <p class="small text-primary text-uppercase mb-0">Sequel</p>
+                                        <h6 class="mb-1">
+                                            <a class="reset-anchor text-dark" href="Secreateofnagas.html">The Secret of the Nagas</a>
+                                        </h6>
+                                        <p class="small text-muted">Amish</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="d-flex mb-1">
-                                <a href="#"><img src="../img/BookCovers/Attitudeiseverything.jpg" alt="" width="80"></a>
-                                <div class="media-body ms-3">
-                                    <p class="small text-primary text-uppercase mb-0">Self help</p>
-                                    <h6 class="mb-1"><a class="reset-anchor" href="AttitudeIsEverything.html">Attitude is Everything</a></h6>
-                                    <p class="small text-muted">Jeff Keller</p>
-                                </div>
-                            </li>
-                            <li class="d-flex mb-1">
-                                <a href="#"><img src="../img/BookCovers/RaisetheTitanic.jpg" alt="" width="80"></a>
-                                <div class="media-body ms-3">
-                                    <p class="small text-primary text-uppercase mb-0">Dirk Pitt</p>
-                                    <h6 class="mb-1"><a class="reset-anchor" href="#">Raise The Titanic</a></h6>
-                                    <p class="small text-muted">Clive Cussler</p>
-                                </div>
-                            </li>
 
+                                <!-- Similar Book 2 -->
+                                <div class="d-flex mb-1 me-4" style="min-width: 250px;">
+                                    <a href="#">
+                                        <img src="https://placehold.co/80x120?text=Book" 
+                                             alt="The Palace of Illusions Cover" 
+                                             class="shadow-sm rounded"
+                                             width="80" height="120" loading="lazy">
+                                    </a>
+                                    <div class="ms-3">
+                                        <p class="small text-primary text-uppercase mb-0">Retelling</p>
+                                        <h6 class="mb-1">
+                                            <a class="reset-anchor text-dark" href="#">The Palace of Illusions</a>
+                                        </h6>
+                                        <p class="small text-muted">Chitra Banerjee Divakaruni</p>
+                                    </div>
+                                </div>
 
-                        </ul>
+                                <!-- Similar Book 3 -->
+                                <div class="d-flex mb-1 me-4" style="min-width: 250px;">
+                                    <a href="#">
+                                        <img src="https://placehold.co/80x120?text=Book" 
+                                             alt="Asura Cover" 
+                                             class="shadow-sm rounded"
+                                             width="80" height="120" loading="lazy">
+                                    </a>
+                                    <div class="ms-3">
+                                        <p class="small text-primary text-uppercase mb-0">Villain's Perspective</p>
+                                        <h6 class="mb-1">
+                                            <a class="reset-anchor text-dark" href="#">Asura</a>
+                                        </h6>
+                                        <p class="small text-muted">Anand Neelakantan</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <!-- Instagram widget -->
 
-                </div>
+                </main>
+
             </div>
         </div>
+
     </section>
+
     <footer class="bg-dark py-4">
         <div class="container">
-            <div class="row py-2">
+            <div class="row py-2 align-items-center">
                 <div class="col-lg-4 text-center text-lg-left mb-2 mb-lg-0">
-                    <p class="small text-muted text-uppercase mb-0">&copy; copyright 2020 - all rights reserved</p>
+                    <p class="small text-muted text-uppercase mb-0">&copy; copyright 2025 - all rights reserved</p>
                 </div>
+
                 <div class="col-lg-4 text-center mb-2 mb-lg-0">
                     <ul class="list-inline text-white small mb-0">
-                        <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/ganeshkedari"><i
-                  class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="reset-anchor"
+                                href="https://www.facebook.com/ganeshkedari"><i class="fab fa-facebook-f"></i></a></li>
                         <li class="list-inline-item"><a class="reset-anchor" href="https://twitter.com/ganesh_kedari"><i
-                  class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/ganeshkedari/"><i
-                  class="fab fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/in/ganeshkedari/"><i
-                  class="fab fa-linkedin"></i></a></li>
-
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="reset-anchor"
+                                href="https://www.instagram.com/ganeshkedari/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="reset-anchor"
+                                href="https://www.linkedin.com/in/ganeshkedari/"><i class="fab fa-linkedin"></i></a>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-4 text-center text-lg-right">
-                    <p class="small text-muted text-uppercase mb-0">Template designed by <a href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Temple</a>. </p>
+                    <p class="small text-muted text-uppercase mb-0">Template by <a href="#">Bootstrap Temple</a>.</p>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- JavaScript files-->
+
+    <!-- JavaScript files -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="js/front.js"></script>
-    <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
-        function injectSvgSprite(path) {
 
-            var ajax = new XMLHttpRequest();
-            ajax.open("GET", path, true);
-            ajax.send();
-            ajax.onload = function(e) {
-                var div = document.createElement("div");
-                div.className = 'd-none';
-                div.innerHTML = ajax.responseText;
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            }
+    <!-- Modern Fetch API for SVG Injection -->
+    <script>
+        function injectSvgSprite(path) {
+            fetch(path)
+                .then(response => {
+                    if (!response.ok) throw new Error("Network response was not ok");
+                    return response.text();
+                })
+                .then(data => {
+                    const div = document.createElement("div");
+                    div.className = 'd-none';
+                    div.innerHTML = data;
+                    document.body.insertBefore(div, document.body.firstChild);
+                })
+                .catch(error => console.error("Error injecting SVG sprite:", error));
         }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
         injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
     </script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</body>
 
+</body>
 </html>

@@ -11949,6 +11949,8 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
 .bg-cover {
   background-size: cover !important;
   background-position: center center !important;
+  width: 320px;
+  height: 360px;  
 }
 
 .bg-center {

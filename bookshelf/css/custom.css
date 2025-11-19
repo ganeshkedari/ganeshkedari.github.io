@@ -148,3 +148,83 @@ ul {
 .book::after {
     left: -6px;
 }
+
+/* Constrain width of book cover so it looks good on wide layouts */
+.book-cover {
+    max-width: 320px; /* tweak this value to taste (e.g. 300-380px) */
+    width: 100%;
+    height: auto;
+    display: block;
+  }  
+
+/* Book Page Custom CSS */
+
+/* Left cover card */
+.cover-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    cursor: pointer;
+    /* display: block; */
+    /* position: relative; */
+    /* background: white; */
+    z-index: 1;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 9px 20px 0 rgba(0, 0, 0, 0.25); */
+    overflow: hidden;
+    transition: box-shadow 0.3s linear;
+  }
+  .cover-img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 6px;
+    display:block;
+    margin: 0 auto 18px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    transform-origin: 0 50%;
+    transform: rotateY(0);
+    transition: all 0.45s ease;
+  }
+
+  .cover-card:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 9px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+  .action-pill { margin-top: 18px; display:block; }
+  .btn-want { background: #3b8b56; color:#fff; border-radius: 40px; padding: 12px 28px; width:100%; font-weight:600; border:none; }
+  .btn-buy { background: transparent; color:#3b8b56; border-radius: 40px; padding: 12px 24px; width:100%; font-weight:600; border:2px solid #3b8b56; }
+
+  /* Title and meta */
+  .book-title { font-family: 'Abril Fatface', serif; font-size: 48px; line-height:1.02; color:#111; margin-bottom:8px; }
+  .book-author { font-size:18px; color:#333; margin-bottom:14px; }
+
+  /* rating */
+  .rating-row { display:flex; align-items:center; gap:14px; margin-bottom:12px; flex-wrap:wrap; }
+  .stars { display:flex; gap:8px; align-items:center; }
+  .star { width:24px; height:24px; display:inline-block; }
+  .star svg path { fill:#f39c12; } /* filled color */
+  .star.empty svg path { fill:#dcdcdc; } /* empty */
+
+  .rating-number { font-size:28px; font-weight:700; margin-left:6px; color:#111; }
+
+  .meta-small { color:#7a7a7a; font-size:14px; margin-bottom:12px; }
+
+  /* award badge */
+  .award-badge { display:inline-block; background:#f6e2b8; padding:6px 12px; border-radius:6px; color:#6b4d1a; font-weight:700; margin-right:12px; font-size:14px; }
+
+  /* description */
+  .book-desc { color:#222; font-size:16px; line-height:1.7; margin-top:6px; }
+  .desc-collapsed { max-height:110px; overflow:hidden; transition:max-height .25s ease; }
+  .show-more { display:inline-flex; align-items:center; gap:6px; margin-top:10px; cursor:pointer; color:#3b8b56; font-weight:600; }
+
+  /* genres */
+  .genres { margin-top:20px; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .genre { padding-bottom:4px; border-bottom:3px solid transparent; color:#2f2f2f; font-weight:600; cursor:pointer; }
+  .genre:hover { border-bottom-color:#3b8b56; color:#3b8b56; }
+
+  @media (max-width:991px){
+    .book-title { font-size:32px; }
+    .cover-img { max-width: 200px; }
+  }
