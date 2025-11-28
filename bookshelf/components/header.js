@@ -1,9 +1,9 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <header class="header">
         <!-- Top bar -->
         <div class="py-2 bg-dark text-white">
@@ -42,29 +42,32 @@ class Header extends HTMLElement {
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Fiction</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">History</a>
+                  <a class="nav-link" href="Fiction.html">Fiction</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Mythology</a>
+                  <a class="nav-link" href="MysteryThriller.html">Mystery & Thriller</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Naval</a>
-                </li>
-    
-                <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Sci-Fi</a>
+                  <a class="nav-link" href="Fantasy.html">Fantasy</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Self Help</a>
+                  <a class="nav-link" href="ScienceFiction.html">Science Fiction</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Marathi</a>
+                  <a class="nav-link" href="Historical.html">Historical</a>
                 </li>
-                
-    
+                <li class="nav-item px-1">
+                  <a class="nav-link" href="BiographyMemoir.html">Biography & Memoir</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link" href="KnowledgeLearning.html">Knowledge & Learning</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link" href="SelfHelp.html">Self-Help</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -72,8 +75,8 @@ class Header extends HTMLElement {
   
         
       </header>
-        `
-    }
+        `;
+  }
 }
 
 

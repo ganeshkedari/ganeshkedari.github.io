@@ -1,0 +1,68 @@
+﻿Found 13 Fiction books:
+
+================================================================================
+Title: Asura: Tale of the Vanquished
+File: Asura.html
+Category: Fiction
+Cover: ../img/BookCovers/asurataleofthevan.jpg
+--------------------------------------------------------------------------------
+Title: Congo
+File: Congo.html
+Category: Fiction
+Cover: ../img/BookCovers/Congo.jpg
+--------------------------------------------------------------------------------
+Title: Deep Fathom
+File: DeepFathom.html
+Category: Fiction
+Cover: ../img/BookCovers/DeepFathom.jpg
+--------------------------------------------------------------------------------
+Title: Jurassic Park
+File: JurassicPark.html
+Category: Science Fiction
+Cover: ../img/BookCovers/JurassicPark.jpg
+--------------------------------------------------------------------------------
+python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python 
+get_fiction_books.py 2>&1 | 
+Out-File -Encoding utf8 
+fiction_bo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo           
+   : NotSpecified: (Traceba  
+  ck (most recent call las   
+ t)::String) [], RemoteEx    
+ception
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+  File "C:\Learning\Website\P
+ersonalWebsite\ganeshkedari.g
+ithub.io\bookshelf\BookReview
+s\get_fiction_books.py", 
+line 92, in <module>
+    fiction_books = main()
+                    ^^^^^^
+  File "C:\Learning\Website\P
+ersonalWebsite\ganeshkedari.g
+ithub.io\bookshelf\BookReview
+s\get_fiction_books.py", 
+line 76, in main
+    print(f"Title: 
+{book['title']}")
+  File "C:\Program Files\Pyth
+on312\Lib\encodings\cp1252.py
+", line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+19-27: character maps to 
+<undefined>

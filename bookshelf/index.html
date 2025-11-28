@@ -45,6 +45,196 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
+    <style>
+        /* Responsive grid for bookshelf - Inside carousel slides */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+            justify-items: center;
+            align-items: start;
+            padding: 40px 10px;
+        }
+
+        @media (max-width: 992px) {
+            .books-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 30px 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                padding: 25px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .books-grid {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 20px 10px;
+            }
+        }
+
+        /* Book item styling */
+        .book {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+            max-width: 220px;
+        }
+
+        .book:hover {
+            transform: translateY(-10px);
+        }
+
+        .book a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .book img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.3s ease;
+            display: block;
+        }
+
+        .book:hover img {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 992px) {
+            .book {
+                max-width: 180px;
+            }
+
+            .book img {
+                max-width: 170px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .book {
+                max-width: 160px;
+            }
+
+            .book img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book {
+                max-width: 200px;
+            }
+
+            .book img {
+                max-width: 180px;
+            }
+        }
+
+        /* Custom navigation styling for bookshelf carousel */
+        .bookshelf-grid-carousel {
+            position: relative;
+            padding: 0 60px 50px 60px;
+            overflow: hidden;
+        }
+
+        .bookshelf-grid-carousel .swiper-slide {
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bookshelf-grid-carousel .swiper-button-prev,
+        .bookshelf-grid-carousel .swiper-button-next {
+            color: #4a4a4a;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .bookshelf-grid-carousel .swiper-button-prev:hover,
+        .bookshelf-grid-carousel .swiper-button-next:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .bookshelf-grid-carousel .swiper-button-prev:after,
+        .bookshelf-grid-carousel .swiper-button-next:after {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .bookshelf-grid-carousel .swiper-pagination {
+            bottom: 10px;
+        }
+
+        .bookshelf-grid-carousel .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #4a4a4a;
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+
+        .bookshelf-grid-carousel .swiper-pagination-bullet:hover {
+            opacity: 0.7;
+        }
+
+        .bookshelf-grid-carousel .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #4a4a4a;
+        }
+
+        @media (max-width: 768px) {
+            .bookshelf-grid-carousel {
+                padding: 0 40px 40px 40px;
+            }
+
+            .bookshelf-grid-carousel .swiper-button-prev,
+            .bookshelf-grid-carousel .swiper-button-next {
+                width: 40px;
+                height: 40px;
+            }
+
+            .bookshelf-grid-carousel .swiper-button-prev:after,
+            .bookshelf-grid-carousel .swiper-button-next:after {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bookshelf-grid-carousel {
+                padding: 0 30px 35px 30px;
+            }
+
+            .bookshelf-grid-carousel .swiper-button-prev,
+            .bookshelf-grid-carousel .swiper-button-next {
+                width: 35px;
+                height: 35px;
+            }
+
+            .bookshelf-grid-carousel .swiper-button-prev:after,
+            .bookshelf-grid-carousel .swiper-button-next:after {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -91,9 +281,8 @@
                     </a>
                 </div>
                 <div class="swiper-slide h-auto">
-                    <a class="destination d-flex align-items-end bg-center bg-cover"
-                        href="BookReviews/Ravana.html"
-                        style="background: url(img/BookCovers/ravana.jpg)">
+                    <a class="destination d-flex align-items-end bg-center bg-cover" href="BookReviews/Ravana.html"
+                        style="background: url(img/BookCovers/ravana.png)">
                         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
                             <p class="small text-uppercase mb-0">Mythology & Retelling</p>
                             <h2 class="h3 mb-4">Ravana Raja Rakshasancha</h2>
@@ -104,7 +293,7 @@
                 <div class="swiper-slide h-auto">
                     <a class="destination d-flex align-items-end bg-center bg-cover"
                         href="BookReviews/AngelsAndDemons.html"
-                        style="background: url(img/BookCovers/angelsanddemons.jpg)">
+                        style="background: url(img/BookCovers/angelsanddemons.png)">
                         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
                             <p class="small text-uppercase mb-0">Mystery & Thriller</p>
                             <h2 class="h3 mb-4">Angels & Demons</h2>
@@ -126,62 +315,28 @@
             </div>
         </div>
     </section>
-    <!-- Instagram section-->
+
+    <!-- Bookshelf section with 4x4 Grid Carousel -->
     <section class="py-5">
         <div class="container py-4">
             <header class="text-center mb-5">
                 <h2>The Athenaeum</h2>
                 <p>Collection of Books I explored during this journey...!!!</p>
             </header>
-            <!-- CSS Bookshelf -->
-            <ul class='list-inline'>
-                <li class='book'>
-                    <a href="BookReviews/TheImmortalsOfMeluha.html">
-                        <img src='img/BookCovers/immortalsofmeluha.jpg' />
-                    </a>
-                </li>
 
-                <li class='book'>
-                    <a href="BookReviews/AttitudeIsEverything.html">
-                        <img src='img/BookCovers/Attitudeiseverything.jpg' /></a>
-                </li>
-
-                <li class='book'>
-                    <a href="BookReviews/Ravana.html">
-                        <img src='img/BookCovers/ravana.jpg' /></a>
-                </li>
-
-            </ul>
-
-    </section>
-    <!-- <section class="pb-5">
-        <div class="container pb-4">
-            <header class="text-center mb-5">
-                <h4> Fiction - Dirk Pitt Series </h4>
-            </header>
-            <ul class='list-inline'>
-                <li class='book'>
-                    <a href="#">
-                    <img src='img/BookCovers/pacific-vortex.jpg' />
-                </li>
-                <li class='book'>
-                    <a href="#">
-                    <img src='img/BookCovers/TheMediterraneanCaper.jpg' />
-                </li>
-                <li class='book'>
-                    <a href="#">
-                    <img src='img/BookCovers/Iceberg.jpg' />
-                </li>
-                <li class='book'>
-                    <a href="#">
-                    <img src='img/BookCovers/RaisetheTitanic.jpg' />
-                </li>
-            </ul>
+            <!-- Bookshelf Carousel with 4x4 Grids as Slides -->
+            <div class="swiper bookshelf-grid-carousel">
+                <div id="booksCarouselContainer" class="swiper-wrapper">
+                    <!-- 4x4 Grid slides will be dynamically loaded by JavaScript -->
+                </div>
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </section> -->
-
-
-
+    </section>
 
     <footer class="bg-dark py-4">
         <div class="container">
@@ -204,21 +359,18 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-right">
                     <p class="small text-muted text-uppercase mb-0">Template designed by <a
-                            href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Temple</a>. </p>
+                            href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Template</a>. </p>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- JavaScript files-->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="js/front.js"></script>
     <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
+        // Inject SVG Sprite
         function injectSvgSprite(path) {
             var ajax = new XMLHttpRequest();
             ajax.open("GET", path, true);
@@ -230,11 +382,128 @@
                 document.body.insertBefore(div, document.body.childNodes[0]);
             }
         }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
         injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+
+        // All books data - Complete list of 52 books  
+        const allBooks = [
+            { href: 'BookReviews/101Essays.html', img: 'img/BookCovers/101essays.jpg', alt: '101 Essays That Will Change the Way You Think' },
+            { href: 'BookReviews/48LawsOfPower.html', img: 'img/BookCovers/48lawsofpower.jpg', alt: '48 Laws of Power' },
+            { href: 'BookReviews/AltarOfEden.html', img: 'img/BookCovers/altarofeden.jpg', alt: 'Altar of Eden' },
+            { href: 'BookReviews/Amazonia.html', img: 'img/BookCovers/Amazonia.jpg', alt: 'Amazonia' },
+            { href: 'BookReviews/AngelsAndDemons.html', img: 'img/BookCovers/angelsanddemons.jpg', alt: 'Angels & Demons' },
+            { href: 'BookReviews/Apurvai.html', img: 'img/BookCovers/apurvai.jpg', alt: 'Apurvai' },
+            { href: 'BookReviews/Asura.html', img: 'img/BookCovers/asurataleofthevan.jpg', alt: 'Asura: Tale of the Vanquished' },
+            { href: 'BookReviews/AtomicHabits.html', img: 'img/BookCovers/atomichabits.jpg', alt: 'Atomic Habits' },
+            { href: 'BookReviews/AttitudeIsEverything.html', img: 'img/BookCovers/Attitudeiseverything.jpg', alt: 'Attitude Is Everything' },
+            { href: 'BookReviews/BatatyachiChal.html', img: 'img/BookCovers/batatyachichal.jpg', alt: 'Batatyachi Chal' },
+            { href: 'BookReviews/Congo.html', img: 'img/BookCovers/congo.jpg', alt: 'Congo' },
+            { href: 'BookReviews/DeepFathom.html', img: 'img/BookCovers/deepfathom.jpg', alt: 'Deep Fathom' },
+            { href: 'BookReviews/DoEpicShit.html', img: 'img/BookCovers/doepicshit.jpg', alt: 'Do Epic Shit' },
+            { href: 'BookReviews/Excavation.html', img: 'img/BookCovers/excavation.jpg', alt: 'Excavation' },
+            { href: 'BookReviews/Flow.html', img: 'img/BookCovers/flow.jpg', alt: 'Flow' },
+            { href: 'BookReviews/IceHunt.html', img: 'img/BookCovers/icehunt.jpg', alt: 'Ice Hunt' },
+            { href: 'BookReviews/Influence.html', img: 'img/BookCovers/influence.jpg', alt: 'Influence' },
+            { href: 'BookReviews/MansSearchForMeaning.html', img: 'img/BookCovers/manssearchformeaning.jpg', alt: 'Man\'s Search for Meaning' },
+            { href: 'BookReviews/MasterYourEmotions.html', img: 'img/BookCovers/masteryouremotions.jpg', alt: 'Master Your Emotions' },
+            { href: 'BookReviews/Meditations.html', img: 'img/BookCovers/meditations.jpg', alt: 'Meditations' },
+            { href: 'BookReviews/MindFullToMindful.html', img: 'img/BookCovers/mindfulltomindful.jpg', alt: 'Mind Full to Mindful' },
+            { href: 'BookReviews/Mrutyunjay.html', img: 'img/BookCovers/mrutyunjay.jpg', alt: 'Mrutyunjay' },
+            { href: 'BookReviews/OneForTheRoad.html', img: 'img/BookCovers/onefortheroad.jpg', alt: 'One For The Road' },
+            { href: 'BookReviews/Panipat.html', img: 'img/BookCovers/panipat.jpg', alt: 'Panipat' },
+            { href: 'BookReviews/Partner.html', img: 'img/BookCovers/partner.jpg', alt: 'Partner' },
+            { href: 'BookReviews/Ravana.html', img: 'img/BookCovers/ravana.jpg', alt: 'Ravana Raja Rakshasancha' },
+            { href: 'BookReviews/ScionOfIkshvaku.html', img: 'img/BookCovers/scionofIkshvaku.jpg', alt: 'Scion of Ikshvaku' },
+            { href: 'BookReviews/Secreateofnagas.html', img: 'img/BookCovers/SecreateOfNagas.jpg', alt: 'The Secret of the Nagas' },
+            { href: 'BookReviews/Siddhartha.html', img: 'img/BookCovers/siddhartha.jpg', alt: 'Siddhartha' },
+            { href: 'BookReviews/Subterranean.html', img: 'img/BookCovers/subterranean.jpg', alt: 'Subterranean' },
+            { href: 'BookReviews/The5AMClub.html', img: 'img/BookCovers/the5amclub.jpg', alt: 'The 5 AM Club' },
+            { href: 'BookReviews/The7Habits.html', img: 'img/BookCovers/the7habits.jpg', alt: 'The 7 Habits of Highly Effective People' },
+            { href: 'BookReviews/TheAlchemist.html', img: 'img/BookCovers/thealchemist.jpg', alt: 'The Alchemist' },
+            { href: 'BookReviews/TheAlmanackOfNavalRavikant.html', img: 'img/BookCovers/thealmanackofnavalravikant.jpg', alt: 'The Almanack of Naval Ravikant' },
+            { href: 'BookReviews/TheBigQuestionsOfLife.html', img: 'img/BookCovers/thebigquestionsoflife.jpg', alt: 'The Big Questions of Life' },
+            { href: 'BookReviews/TheCompoundEffect.html', img: 'img/BookCovers/thecompoundeffect.jpg', alt: 'The Compound Effect' },
+            { href: 'BookReviews/TheDaVinciCode.html', img: 'img/BookCovers/DaVinciCode.jpg', alt: 'The Da Vinci Code' },
+            { href: 'BookReviews/TheGreatZooOfChina.html', img: 'img/BookCovers/thegreatzooofchina.jpg', alt: 'The Great Zoo of China' },
+            { href: 'BookReviews/TheImmortalsOfMeluha.html', img: 'img/BookCovers/immortalsofmeluha.jpg', alt: 'The Immortals of Meluha' },
+            { href: 'BookReviews/TheLastTemplar.html', img: 'img/BookCovers/thelasttemplar.jpg', alt: 'The Last Templar' },
+            { href: 'BookReviews/TheLawsOfHumanNature.html', img: 'img/BookCovers/thelawsofhumannature.jpg', alt: 'The Laws of Human Nature' },
+            { href: 'BookReviews/TheLostCity.html', img: 'img/BookCovers/thelostcity.jpg', alt: 'The Lost City' },
+            { href: 'BookReviews/TheMiracleMorning.html', img: 'img/BookCovers/themiraclemorning.jpg', alt: 'The Miracle Morning' },
+            { href: 'BookReviews/TheOathOfTheVayuputras.html', img: 'img/BookCovers/theoathofthevayuputras.jpg', alt: 'The Oath of the Vayuputras' },
+            { href: 'BookReviews/ThePowerOfHabit.html', img: 'img/BookCovers/thepowerofhabit.jpg', alt: 'The Power of Habit' },
+            { href: 'BookReviews/ThePowerOfYourSubconsciousMind.html', img: 'img/BookCovers/thepowerofyoursubconsciousmind.jpg', alt: 'The Power of Your Subconscious Mind' },
+            { href: 'BookReviews/ThePsychologyOfMoney.html', img: 'img/BookCovers/thepsychologyofmoney.jpg', alt: 'The Psychology of Money' },
+            { href: 'BookReviews/TheSubtleArt.html', img: 'img/BookCovers/thesubtleart.jpg', alt: 'The Subtle Art of Not Giving a F*ck' },
+            { href: 'BookReviews/ThinkingFastAndSlow.html', img: 'img/BookCovers/thinkingfastandslow.jpg', alt: 'Thinking, Fast and Slow' },
+            { href: 'BookReviews/Vapurza.html', img: 'img/BookCovers/vapurza.jpg', alt: 'Vapurza' },
+            { href: 'BookReviews/VyaktiAniValli.html', img: 'img/BookCovers/vyaktianivalli.jpg', alt: 'Vyakti Ani Valli' },
+            { href: 'BookReviews/Yayati.html', img: 'img/BookCovers/yayati.jpg', alt: 'Yayati' }
+        ];
+
+        // Shuffle array randomly
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // Chunk array into groups of specified size
+        function chunkArray(array, size) {
+            const chunks = [];
+            for (let i = 0; i < array.length; i += size) {
+                chunks.push(array.slice(i, i + size));
+            }
+            return chunks;
+        }
+
+        // Populate books in carousel with 4x4 grid slides
+        function populateBooks() {
+            const shuffled = shuffleArray(allBooks);
+            const bookChunks = chunkArray(shuffled, 16); // Create chunks of 16 books each (4x4 grid)
+
+            const carouselContainer = document.getElementById('booksCarouselContainer');
+            if (carouselContainer) {
+                // Create carousel slides, each containing a 4x4 grid
+                carouselContainer.innerHTML = bookChunks.map(chunk => {
+                    const gridHTML = chunk.map(book =>
+                        `<div class="book"><a href="${book.href}"><img src="${book.img}" alt="${book.alt}" /></a></div>`
+                    ).join('');
+
+                    return `<div class="swiper-slide"><div class="books-grid">${gridHTML}</div></div>`;
+                }).join('');
+
+                // Initialize Swiper carousel
+                new Swiper('.bookshelf-grid-carousel', {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                    loop: false,
+                    navigation: {
+                        nextEl: '.bookshelf-grid-carousel .swiper-button-next',
+                        prevEl: '.bookshelf-grid-carousel .swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.bookshelf-grid-carousel .swiper-pagination',
+                        clickable: true,
+                    },
+                    keyboard: {
+                        enabled: true,
+                    },
+                    mousewheel: {
+                        enabled: false,
+                    }
+                });
+            }
+        }
+
+        // Run on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', populateBooks);
+        } else {
+            populateBooks();
+        }
     </script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"

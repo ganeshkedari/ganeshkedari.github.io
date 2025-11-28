@@ -8,475 +8,425 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
+
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.theme.default.min.css">
+
   <!-- Google fonts-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400&amp;display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
-  <!-- theme stylesheet-->
+
+  <!-- Theme stylesheet-->
   <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
   <!-- Custom stylesheet - for your changes-->
   <link rel="stylesheet" href="css/custom.css">
+
   <!-- Favicon-->
   <link rel="shortcut icon" href="img/favicon.png">
+
   <!-- Tweaks for older IEs-->
   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
+  <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9QXNM5084"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-K9QXNM5084');
   </script>
+
+  <!-- Custom Header Component -->
   <script src="components/header.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-  <!-- Header-->
+  <!-- ========================================
+       HEADER SECTION
+       Custom web component for site navigation
+       ======================================== -->
   <header-component></header-component>
-  
-  <!-- Destinations -->
+
+  <!-- ========================================
+       DESTINATIONS SECTION
+       Owl Carousel slider showcasing travel categories
+       Images: forts, resorts, beaches, farms, mountains, monuments, skylines, food, parks, vehicles, animals, temples
+       ======================================== -->
   <section class="pt-5">
     <div class="container">
       <h1>Destinations</h1>
       <p class="mb-0">Adventure awaits, go find it...</p>
     </div>
-    <div class="destinations-slider owl-carousel owl-theme nav-center-custom owl-padding"><a
-        class="destination d-flex align-items-end bg-center bg-cover" href="forts.html"
+
+    <!-- Destinations Carousel -->
+    <div class="destinations-slider owl-carousel owl-theme nav-center-custom owl-padding">
+
+      <!-- Forts -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="forts.html"
         style="background: url(img/forts.jpg)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Paris</p> -->
           <h2 class="h3 mb-4">Forts</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
       </a>
+
+      <!-- Resorts -->
       <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(img/upperdeck.jpg)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Tokyo</p> -->
           <h2 class="h3 mb-4">Resorts</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
       </a>
+
+      <!-- Beaches -->
       <a class="destination d-flex align-items-end bg-center bg-cover" href="#" style="background: url(img/beach.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Tokyo</p> -->
           <h2 class="h3 mb-4">Beaches</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
       </a>
+
+      <!-- Farms -->
       <a class="destination d-flex align-items-end bg-center bg-cover" href="#" style="background: url(img/farm.jpg)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Madrid</p> -->
           <h2 class="h3 mb-4">Farms</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
+      </a>
+
+      <!-- Mountains -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(img/mountains.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Rome</p> -->
           <h2 class="h3 mb-4">Mountains</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
+      </a>
+
+      <!-- Monuments -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(img/monuments.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Jakarta</p> -->
           <h2 class="h3 mb-4">Monuments</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a> <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
+      </a>
+
+      <!-- Skylines -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(img/skyline.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Cairo</p> -->
           <h2 class="h3 mb-4">Skylines</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
-        style="background: url(img/food.JPG)">
+      </a>
+
+      <!-- Food -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#" style="background: url(img/food.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Berlin</p> -->
           <h2 class="h3 mb-4">Food around the world</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
+      </a>
+
+      <!-- Parks -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(img/pune_park.jpg)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Bangkok</p> -->
           <h2 class="h3 mb-4">Parks</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
-        style="background: url(img/bus.JPG)">
+      </a>
+
+      <!-- Vehicles -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#" style="background: url(img/bus.JPG)">
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">Malé</p> -->
           <h2 class="h3 mb-4">Vehicles</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="#"
+      </a>
+
+      <!-- Animals - Using external Google Photos link -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
         style="background: url(https://lh3.googleusercontent.com/B_X36NRSmJ6rXdSDINxxVF1HTY2KPQ9quGvkJEwHnIZPtvHb7gYzx1XcPujVYE2TsygdQx0MNcwpz51r3_GcAs6UpumyLECHIrkuFsW1TXDX7Y_8eRI3-WAylF13Nx2kLmm_WC5y=w2400)">
-
-        <!-- <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
-        style="background: url(img/deer.jpg)"> -->
-
-
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">New York</p> -->
           <h2 class="h3 mb-4">Animals</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
-      </a><a class="destination d-flex align-items-end bg-center bg-cover" href="Temples.html"
+      </a>
+
+      <!-- Temples - Links to dedicated Temples page -->
+      <a class="destination d-flex align-items-end bg-center bg-cover" href="Temples.html"
         style="background: url(img/temple.jpg)">
-
-        <!-- <a class="destination d-flex align-items-end bg-center bg-cover" href="#"
-      style="background: url(img/deer.jpg)"> -->
-
-
         <div class="destination-inner w-100 text-center text-white index-forward has-transition">
-          <!-- <p class="small text-uppercase mb-0">New York</p> -->
           <h2 class="h3 mb-4">Temples</h2>
           <div class="btn btn-primary btn-block destination-btn text-white">Discover</div>
         </div>
       </a>
+
     </div>
   </section>
-  <!-- Divider Section -->
+
+  <!-- ========================================
+       ABOUT SECTION
+       Two-column layout with Isaac Newton quote and background image
+       Font: Courgette (cursive)
+       ======================================== -->
   <section class="py-5">
     <div class="container py-4">
-      <!-- Home listing -->
       <div class="row align-items-stretch bg-full-left">
+
+        <!-- Left Column: Text Content -->
         <div class="col-lg-6 pr-lg-0 order-2 order-lg-1">
           <div class="h-100 bg-light d-flex align-items-center">
             <div class="py-5 pr-4 pl-3 pl-lg-0">
               <div style="font-family: 'Courgette', cursive;">
+
+                <!-- Isaac Newton Quote -->
                 <p class="mb-0">
                   I do not know what I may appear to the world; but to myself I seem to have been only like a boy
                   playing on the sea-shore, and diverting myself in now and then finding a smoother pebble or a prettier
                   shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.</br>
                 <p style="text-align: right;"><a href="https://en.wikipedia.org/wiki/Isaac_Newton"
                     target="_blank">-Isaac Newton</a></p>
-
                 </p>
 
-                Nature, Food, or History no matter whatever is the cause,
-                everything is just a reason to find new opportunities to roam around the world.
-                </br> </br>
-                This travelogue is a collection of moments I seized so far during roaming around these places.
-                </br> </br>
-                It all started with a weekend ride with my trusted Bajaj Kawasaki 4S Champian with a friend and turned
-                out to be the Chicken Soup for my soul.
+                <!-- Travelogue Introduction -->
+                <p>
+                  Nature, Food, or History no matter whatever is the cause,
+                  everything is just a reason to find new opportunities to roam around the world.
+                  </br> </br>
+                  This travelogue is a collection of moments I seized so far during roaming around these places.
+                  </br> </br>
+                  It all started with a weekend ride with my trusted Bajaj Kawasaki 4S Champian with a friend and turned
+                  out to be the Chicken Soup for my soul.
                 </p>
               </div>
               </br>
-
-
-
-              <!-- <p class="text-primary font-weight-bold small text-uppercase mb-2"> -->
-
-              <!-- <div class="text-reset">
-                <p data-l="1" style="width: 351px;"><span data-m="\114u">सैर </span><span data-m="\0mij">कर </span><span
-                    data-m="\0f2j">दुनिया </span><span data-m="\1xds">की </span><span data-m="\0rho">ग़ाफ़िल
-                  </span><span data-m="\2bp6">ज़िंदगानी </span><span data-m="\0kme">फिर </span><span data-m="\080d">कहाँ
-                    ? </span></p>
-                <p data-l="2" style="width: 351px;"><span data-m="\1oad" style="margin-right: 2.875px;">ज़िंदगी
-                  </span><span data-m="\1wx7" style="margin-right: 2.875px;">गर </span><span data-m="\0aln"
-                    style="margin-right: 2.875px;">कुछ </span><span data-m="\2fu2" style="margin-right: 2.875px;">रही
-                  </span><span data-m="\12qz" style="margin-right: 2.875px;">तो </span><span data-m="\2p25"
-                    style="margin-right: 2.875px;">ये </span><span data-m="\2knm" style="margin-right: 2.875px;">जवानी
-                  </span><span data-m="\0kme" style="margin-right: 2.875px;">फिर </span><span data-m="\080d">कहाँ
-                    ?</span></p>
-              </div> -->
-              <!-- </p> -->
-              <!-- <ul class="list-inline small text-uppercase mb-0">
-                  <li class="list-inline-item align-middle"><img class="rounded-circle shadow-sm" src="img/person-1.jpg" alt="" width="30"/></li>
-                  <li class="list-inline-item mr-0 text-gray align-middle">By </li>
-                  <li class="list-inline-item align-middle mr-0"><a class="font-weight-bold reset-anchor" href="#">Jason Doe</a></li>
-                  <li class="list-inline-item text-gray align-middle mr-0">|</li>
-                  <li class="list-inline-item text-gray align-middle">Jan, 2019</li>
-                </ul> -->
             </div>
           </div>
         </div>
-        <div class="col-lg-6 pl-lg-0 order-1 order-lg-2"><a class="d-block h-100 bg-center bg-cover" href="#"
-            style="background: url(img/about_04.jpg)"></a></div>
+
+        <!-- Right Column: Background Image -->
+        <div class="col-lg-6 pl-lg-0 order-1 order-lg-2">
+          <a class="d-block h-100 bg-center bg-cover" href="#" style="background: url(img/about_04.jpg)"></a>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- Instagram section-->
+
+  <!-- ========================================
+       PHOTO GALLERY SECTION
+       Instagram/Social Media feed integration using EmbedSocial
+       ======================================== -->
   <section class="pb-5">
     <div class="container pb-4">
       <header class="text-center mb-5">
         <h2>La Galerie d'Art </h2>
         <p> </p>
       </header>
-      <!-- <div data-mc-src="821abd68-ff76-4c8a-b606-be01df0f943f#instagram"></div>
 
-      <script src="https://cdn2.woxo.tech/a.js#611962c9acb77100161d8a8e" async data-usrc>
-      </script> -->
+      <!-- EmbedSocial Instagram Feed Widget -->
+      <div class="embedsocial-hashtag" data-ref="68c0e1cea4dd1cbe20244585cb04cbd32a7af5d0">
+        <a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank"
+          title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a>
+      </div>
 
-      <div class="embedsocial-hashtag" data-ref="68c0e1cea4dd1cbe20244585cb04cbd32a7af5d0"><a class="feed-powered-by-es"
-          href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Powered by EmbedSocial">Powered
-          by EmbedSocial<span>→</span></a></div>
+      <!-- EmbedSocial Script Loader -->
       <script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
-      <!-- <div class="row">
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-1.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-2.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-3.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-4.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-5.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-6.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-1.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-        <div class="col-lg-3 col-md-6 px-md-1 py-1"><a class="instagram-item d-block w-100 reset-anchor text-white"
-            href="#"><img class="img-fluid" src="img/listing-tnumbnail-2.jpg" alt="">
-            <div class="instagram-item-overlay p-5">
-              <h6>We travel not to escape life, but for life not to escape us.</h6>
-            </div>
-          </a></div>
-      </div> -->
     </div>
   </section>
-  <!-- Travel essentials section -->
+
+  <!-- ========================================
+       TRAVEL ESSENTIALS SECTION
+       Grid display of travel items with icons
+       Includes: Backpack, Camera, Sunglasses, Diary
+       Plus themed vehicle names (Black Pearl, Flying Dutchman, The Dauntless, The Endeavoure)
+       ======================================== -->
   <section class="py-5 bg-light">
     <div class="container py-4">
       <header class="text-center mb-5">
         <h2>My travel essentials</h2>
         <p>On a long journey even a straw weighs heavy. -Spanish Proverb </p>
       </header>
+
       <div class="row text-center">
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none" href="#"><img class="mb-4"
-              src="img/rucksack.png" alt="" height="150">
+
+        <!-- Essential Items Row 1 -->
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="#">
+            <img class="mb-4" src="img/rucksack.png" alt="" height="150">
             <h3 class="h5">Backpack</h3>
-            <!-- <p class="text-small text-muted">Deserunt et ad culpa culpa dolore.</p> -->
-          </a></div>
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none" href="#"><img class="mb-4"
-              src="img/camera.png" alt="" height="150">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="#">
+            <img class="mb-4" src="img/camera.png" alt="" height="150">
             <h3 class="h5">Camera</h3>
-            <!-- <p class="text-small text-muted">Consectetur ex sunt duis minim quis dolor.</p> -->
-          </a></div>
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none" href="#"><img class="mb-4"
-              src="img/sunglasses.png" alt="" height="150">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="#">
+            <img class="mb-4" src="img/sunglasses.png" alt="" height="150">
             <h3 class="h5">Sunglasses</h3>
-            <!-- <p class="text-small text-muted">Deserunt et ad culpa culpa dolore.</p> -->
-          </a></div>
+          </a>
+        </div>
 
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none" href="#"><img class="mb-4"
-              src="img/diary.png" alt="" height="150">
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="#">
+            <img class="mb-4" src="img/diary.png" alt="" height="150">
             <h3 class="h5">Diary</h3>
-            <!-- <p class="text-small text-muted">Elit ad est labore irure qui.</p> -->
-          </a></div>
-        <!---------------------------------------------------------------------------->
+          </a>
+        </div>
 
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none"
-            href="https://pirates.fandom.com/wiki/Black_Pearl" target="_blank"><img class="mb-4" src="img/pulsar.png" alt=""
-              height="150">
+        <!-- Vehicle Items Row 2 - Pirates of the Caribbean themed names -->
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="https://pirates.fandom.com/wiki/Black_Pearl" target="_blank">
+            <img class="mb-4" src="img/pulsar.png" alt="" height="150">
             <h3 class="h5">Black Pearl</h3>
-            <!-- <p class="text-small text-muted">Deserunt et ad culpa culpa dolore.</p> -->
-          </a></div>
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none"
-            href="https://pirates.fandom.com/wiki/Flying_Dutchman" target="_blank"><img class="mb-4" src="img/avenger.png" alt=""
-              height="150">
-            <h3 class="h5">Flying Dutchman</h3>
-            <!-- <p class="text-small text-muted">Consectetur ex sunt duis minim quis dolor.</p> -->
-          </a></div>
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none"
-            href="https://disney.fandom.com/wiki/HMS_Dauntless" target="_blank"><img class="mb-4" src="img/TataTigor.png" alt="" height="150">
-            <h3 class="h5">The Dauntless</h3>
-            <!-- <p class="text-small text-muted">Deserunt et ad culpa culpa dolore.</p> -->
-          </a></div>
+          </a>
+        </div>
 
-        <div class="col-lg-3 col-md-6"><a class="text-reset text-decoration-none"
-            href="https://pirates.fandom.com/wiki/HMS_Endeavour" target="_blank"><img class="mb-4" src="img/xl6.png" alt=""
-              height="150">
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="https://pirates.fandom.com/wiki/Flying_Dutchman"
+            target="_blank">
+            <img class="mb-4" src="img/avenger.png" alt="" height="150">
+            <h3 class="h5">Flying Dutchman</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="https://disney.fandom.com/wiki/HMS_Dauntless"
+            target="_blank">
+            <img class="mb-4" src="img/TataTigor.png" alt="" height="150">
+            <h3 class="h5">The Dauntless</h3>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a class="text-reset text-decoration-none" href="https://pirates.fandom.com/wiki/HMS_Endeavour"
+            target="_blank">
+            <img class="mb-4" src="img/xl6.png" alt="" height="150">
             <h3 class="h5">The Endeavoure</h3>
-            <!-- <p class="text-small text-muted">Elit ad est labore irure qui.</p> -->
-          </a></div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- Subscribe section -->
+
+  <!-- ========================================
+       POETRY SECTION
+       Hindi/Urdu poetry by Khwaja Mir Dard
+       Font: Yatra One (for Hindi text)
+       ======================================== -->
   <section class="py-5">
     <div class="container py-4">
       <div class="row align-items-center">
-        <div class="col-lg-6 position-relative py-4"><img class="subscribe-img" src="img/ganesh_aboutMe.jpg" alt=""><img
-            class="subscribe-img" src="img/ganesh_aboutMe.jpg" alt=""></div>
+
+        <!-- Left Column: Author Image (duplicated for effect) -->
+        <div class="col-lg-6 position-relative py-4">
+          <img class="subscribe-img" src="img/ganesh_aboutMe.jpg" alt="">
+          <img class="subscribe-img" src="img/ganesh_aboutMe.jpg" alt="">
+        </div>
+
+        <!-- Right Column: Hindi Poetry -->
         <div class="col-lg-6">
-
-
           <div style="font-family: 'Yatra One', cursive;">
             <p>सैर कर दुनिया की ग़ाफ़िल ज़िंदगानी फिर कहाँ ? </br>
               ज़िंदगी गर कुछ रही तो ये जवानी फिर कहाँ ? </br>
-              <a href="https://rek.ht/a/0z3w/2" target="_blank">- ख़्वाजा मीर दर्द</a>
+              <a href="https://rek.ht/a/0z3w/2" target="_blank">- ख़्वाजा मीर दर्द</a>
             </p>
           </div>
-          <!-- <form action="#">
-            <div class="row">
-              <div class="form-group col-lg-8">
-                <input class="form-control" type="email" name="email" placeholder="Enter your email address">
-              </div>
-              <div class="form-group col-lg-4">
-                <button class="btn btn-dark btn-block" type="submit">Subscribe</button>
-              </div>
-            </div>
-          </form> -->
         </div>
+
       </div>
     </div>
   </section>
-  <!-- Top categories section -->
-  <!-- <section class="py-5 bg-light">
-    <div class="container py-4">
-      <header class="mb-5 text-center">
-        <h2>Top categories</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-      </header>
-      <div class="row text-center">
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#food-1"> </use>
-            </svg>
-            <h3 class="h5">Restaurants</h3>
-            <p class="text-muted text-small">3 Destinations</p>
-          </a></div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#paper-bag-1"> </use>
-            </svg>
-            <h3 class="h5 mb-1">Markets</h3>
-            <p class="text-muted text-small">7 Destinations</p>
-          </a></div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#special-price-1"> </use>
-            </svg>
-            <h3 class="h5 mb-1">Low budget</h3>
-            <p class="text-muted text-small">2 Destinations</p>
-          </a></div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#movie-camera-1"> </use>
-            </svg>
-            <h3 class="h5 mb-1">Cinemas</h3>
-            <p class="text-muted text-small">4 Destinations</p>
-          </a></div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#beach-1"> </use>
-            </svg>
-            <h3 class="h5 mb-1">Beaches</h3>
-            <p class="text-muted text-small">5 Destinations</p>
-          </a></div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a class="reset-anchor d-block" href="listing.html">
-            <svg class="svg-icon mb-3 svg-icon-big svg-icon-light text-primary">
-              <use xlink:href="#camping-1"> </use>
-            </svg>
-            <h3 class="h5 mb-1">Camping</h3>
-            <p class="text-muted text-small">6 Destinations</p>
-          </a></div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Sponsors section-->
-  <!-- <section class="py-5">
-    <div class="container py-4">
-      <header class="text-center mb-4">
-        <h2>Our sponsors</h2>
-      </header>
-      <!-- Brands --/> TODO : REMOVE THIS UNCOMMENT
-      <div class="owl-carousel sponsors-slider"><a href="#"><img class="d-block mx-auto my-3 sponsor"
-            src="img/brand-1.svg" alt=""></a><a href="#"><img class="d-block mx-auto my-3 sponsor" src="img/brand-2.svg"
-            alt=""></a><a href="#"><img class="d-block mx-auto my-3 sponsor" src="img/brand-3.svg" alt=""></a><a
-          href="#"><img class="d-block mx-auto my-3 sponsor" src="img/brand-4.svg" alt=""></a><a href="#"><img
-            class="d-block mx-auto my-3 sponsor" src="img/brand-5.svg" alt=""></a><a href="#"><img
-            class="d-block mx-auto my-3 sponsor" src="img/brand-6.svg" alt=""></a>
-      </div>
-    </div>
-  </section> -->
+
+  <!-- ========================================
+       FOOTER SECTION
+       Copyright, social media links, template credit
+       ======================================== -->
   <footer class="bg-dark py-4">
     <div class="container">
       <div class="row py-2">
+
+        <!-- Copyright -->
         <div class="col-lg-4 text-center text-lg-left mb-2 mb-lg-0">
           <p class="small text-muted text-uppercase mb-0">&copy; copyright 2020 - all rights reserved</p>
         </div>
+
+        <!-- Social Media Links -->
         <div class="col-lg-4 text-center mb-2 mb-lg-0">
           <ul class="list-inline text-white small mb-0">
-            <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/ganeshkedari"><i
-                  class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="https://twitter.com/ganesh_kedari"><i
-                  class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/ganeshkedari/"><i
-                  class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/in/ganeshkedari/"><i
-                  class="fab fa-linkedin"></i></a></li>
-
+            <li class="list-inline-item">
+              <a class="reset-anchor" href="https://www.facebook.com/ganeshkedari">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="reset-anchor" href="https://twitter.com/ganesh_kedari">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="reset-anchor" href="https://www.instagram.com/ganeshkedari/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="reset-anchor" href="https://www.linkedin.com/in/ganeshkedari/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
           </ul>
         </div>
+
+        <!-- Template Credit -->
         <div class="col-lg-4 text-center text-lg-right">
-          <p class="small text-muted text-uppercase mb-0">Template designed by <a
-              href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Temple</a>. </p>
+          <p class="small text-muted text-uppercase mb-0">
+            Template designed by <a href="https://bootstraptemple.com/p/bootstrap-travel">Bootstrap Temple</a>.
+          </p>
         </div>
+
       </div>
     </div>
   </footer>
-  <!-- JavaScript files-->
+
+  <!-- ========================================
+       JAVASCRIPT DEPENDENCIES
+       jQuery, Bootstrap, Owl Carousel, Custom scripts
+       ======================================== -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
   <script src="js/front.js"></script>
-  <script>
-    // ------------------------------------------------------- //
-    //   Inject SVG Sprite - 
-    //   see more here 
-    //   https://css-tricks.com/ajaxing-svg-sprite/
-    // ------------------------------------------------------ //
-    function injectSvgSprite(path) {
 
+  <!-- SVG Sprite Injection Script -->
+  <script>
+    /**
+     * Injects SVG sprite into the DOM for icon usage
+     * @param {string} path - URL to the SVG sprite file
+     */
+    function injectSvgSprite(path) {
       var ajax = new XMLHttpRequest();
       ajax.open("GET", path, true);
       ajax.send();
@@ -487,14 +437,11 @@
         document.body.insertBefore(div, document.body.childNodes[0]);
       }
     }
-    // this is set to BootstrapTemple website as you cannot 
-    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-    // while using file:// protocol
-    // pls don't forget to change to your domain :)
+    // Load SVG sprite from BootstrapTemple CDN
     injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
-
   </script>
-  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+
+  <!-- FontAwesome CSS - Loaded last to prevent render blocking -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>
