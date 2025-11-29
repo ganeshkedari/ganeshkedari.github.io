@@ -1,9 +1,9 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <header class="header">
         <!-- Top bar -->
         <div class="py-2 bg-dark text-white">
@@ -42,41 +42,41 @@ class Header extends HTMLElement {
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="forts.html">Forts</a>
+                  <a class="nav-link" href="Pages/forts.html">Forts</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Resorts</a>
+                  <a class="nav-link" href="Pages/Resorts.html">Resorts</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Beaches</a>
+                  <a class="nav-link" href="Pages/Beaches.html">Beaches</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Farms</a>
+                  <a class="nav-link" href="Pages/Farms.html">Farms</a>
                 </li>
     
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Mountains</a>
+                  <a class="nav-link" href="Pages/Mountains.html">Mountains</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Monuments</a>
+                  <a class="nav-link" href="Pages/Monuments.html">Monuments</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Skylines</a>
+                  <a class="nav-link" href="Pages/Skylines.html">Skylines</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Food</a>
+                  <a class="nav-link" href="Pages/Food.html">Food</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Parks</a>
+                  <a class="nav-link" href="Pages/Parks.html">Parks</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Vehicles</a>
+                  <a class="nav-link" href="Pages/Vehicles.html">Vehicles</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="#">Animals</a>
+                  <a class="nav-link" href="Pages/Animals.html">Animals</a>
                 </li>
                 <li class="nav-item px-1">
-                  <a class="nav-link" href="Temples.html">Temples</a>
+                  <a class="nav-link" href="Pages/Temples.html">Temples</a>
                 </li>
     
               </ul>
@@ -85,8 +85,8 @@ class Header extends HTMLElement {
         </nav>
       </header>
         `;
-      }
   }
+}
 
-  
-  customElements.define('header-component', Header);
+
+customElements.define('header-component', Header);
