@@ -298,109 +298,75 @@
 
   <!-- JavaScript files-->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="js/front.js"></script>
-  <script>
-    // Inject SVG Sprite
-    function injectSvgSprite(path) {
-      var ajax = new XMLHttpRequest();
-      ajax.open("GET", path, true);
-      ajax.send();
-      ajax.onload = function (e) {
-        var div = document.createElement("div");
-        div.className = 'd-none';
-        div.innerHTML = ajax.responseText;
-        document.body.insertBefore(div, document.body.childNodes[0]);
-      }
-    }
-    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+  chunks.push(array.slice(i, i + size));
+  }
+  return chunks;
+  }
 
-    // Template books data - Replace with actual books
-const books = [
-      { href: 'BookReviews/MansSearchForMeaning.html', img: 'img/BookCovers/manssearchformeaning.jpg', alt: 'Man\'s Search for Meaning' },
-      { href: 'BookReviews/VyaktiAniValli.html', img: 'img/BookCovers/VyaktiAniValli.jpg', alt: 'Vyakti ani Valli' },
-    ];
+  // Populate books in carousel with 4x4 grid slides
+  function populateBooks() {
+  // Use empty array if no books defined
+  const bookList = typeof books !== 'undefined' ? books : [];
 
-    // Shuffle array randomly
-    function shuffleArray(array) {
-      const arr = [...array];
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-      }
-      return arr;
-    }
+  if (bookList.length === 0) {
+  const container = document.getElementById('booksCarouselContainer');
+  if (container) {
+  container.innerHTML = '<div class="text-center w-100 py-5">
+    <p class="lead text-muted">No books available in this category yet.</p>
+  </div>';
+  }
+  return;
+  }
 
-    // Chunk array into groups of specified size
-    function chunkArray(array, size) {
-      const chunks = [];
-      for (let i = 0; i < array.length; i += size) {
-        chunks.push(array.slice(i, i + size));
-      }
-      return chunks;
-    }
+  const shuffled = shuffleArray(bookList);
+  const bookChunks = chunkArray(shuffled, 16); // Create chunks of 16 books each (4x4 grid)
 
-    // Populate books in carousel with 4x4 grid slides
-    function populateBooks() {
-      // Use empty array if no books defined
-      const bookList = typeof books !== 'undefined' ? books : [];
+  const carouselContainer = document.getElementById('booksCarouselContainer');
+  if (carouselContainer) {
+  // Create carousel slides, each containing a 4x4 grid
+  carouselContainer.innerHTML = bookChunks.map(chunk => {
+  const gridHTML = chunk.map(book =>
+  `<div class="book"><a href="${book.href}"><img src="${book.img}" alt="${book.alt}" /></a></div>`
+  ).join('');
 
-      if (bookList.length === 0) {
-        const container = document.getElementById('booksCarouselContainer');
-        if (container) {
-          container.innerHTML = '<div class="text-center w-100 py-5"><p class="lead text-muted">No books available in this category yet.</p></div>';
-        }
-        return;
-      }
+  return `<div class="swiper-slide">
+    <div class="books-grid">${gridHTML}</div>
+  </div>`;
+  }).join('');
 
-      const shuffled = shuffleArray(bookList);
-      const bookChunks = chunkArray(shuffled, 16); // Create chunks of 16 books each (4x4 grid)
+  // Initialize Swiper carousel
+  new Swiper('.bookshelf-grid-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  loop: bookList.length > 16, // Enable loop only if multiple slides
+  navigation: {
+  nextEl: '.bookshelf-grid-carousel .swiper-button-next',
+  prevEl: '.bookshelf-grid-carousel .swiper-button-prev',
+  },
+  pagination: {
+  el: '.bookshelf-grid-carousel .swiper-pagination',
+  clickable: true,
+  },
+  keyboard: {
+  enabled: true,
+  },
+  mousewheel: {
+  enabled: false,
+  },
+  autoplay: {
+  delay: 5000,
+  disableOnInteraction: true,
+  }
+  });
+  }
+  }
 
-      const carouselContainer = document.getElementById('booksCarouselContainer');
-      if (carouselContainer) {
-        // Create carousel slides, each containing a 4x4 grid
-        carouselContainer.innerHTML = bookChunks.map(chunk => {
-          const gridHTML = chunk.map(book =>
-            `<div class="book"><a href="${book.href}"><img src="${book.img}" alt="${book.alt}" /></a></div>`
-          ).join('');
-
-          return `<div class="swiper-slide"><div class="books-grid">${gridHTML}</div></div>`;
-        }).join('');
-
-        // Initialize Swiper carousel
-        new Swiper('.bookshelf-grid-carousel', {
-          slidesPerView: 1,
-          spaceBetween: 50,
-          loop: bookList.length > 16, // Enable loop only if multiple slides
-          navigation: {
-            nextEl: '.bookshelf-grid-carousel .swiper-button-next',
-            prevEl: '.bookshelf-grid-carousel .swiper-button-prev',
-          },
-          pagination: {
-            el: '.bookshelf-grid-carousel .swiper-pagination',
-            clickable: true,
-          },
-          keyboard: {
-            enabled: true,
-          },
-          mousewheel: {
-            enabled: false,
-          },
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: true,
-          }
-        });
-      }
-    }
-
-    // Run on page load
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', populateBooks);
-    } else {
-      populateBooks();
-    }
+  // Run on page load
+  if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', populateBooks);
+  } else {
+  populateBooks();
+  }
   </script>
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
