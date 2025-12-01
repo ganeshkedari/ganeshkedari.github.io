@@ -1,0 +1,265 @@
+=== IMAGE CASE FIX LOG ===
+
+Files modified: 49
+Total changes: 161
+
+=== DETAILED CHANGES ===
+
+48LawsOfPower.html:
+  TheLawsofHumanNature.jpg → thelawsofhumannature.jpg
+
+AltarOfEden.html:
+  AltarOfEden.jpg → altarofeden.jpg
+  AltarOfEden.jpg → altarofeden.jpg
+  Amazonia.jpg → amazonia.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+
+Amazonia.html:
+  Amazonia.jpg → amazonia.jpg
+  Amazonia.jpg → amazonia.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+  Congo.jpg → congo.jpg
+  Excavation.jpg → excavation.jpg
+
+AngelsAndDemons.html:
+  AngelsAndDemons.jpg → angelsanddemons.jpg
+  AngelsAndDemons.jpg → angelsanddemons.jpg
+  TheDaVinciCode.jpg → thedavincicode.jpg
+  TheLastTemplar.jpg → thelasttemplar.jpg
+
+Apurvai.html:
+  Apurvai.jpg → apurvai.jpg
+  Apurvai.jpg → apurvai.jpg
+  VyaktiAniValli.jpg → vyaktianivalli.jpg
+  BatatyachiChal.jpg → batatyachichal.jpg
+  Vapurza.jpg → vapurza.jpg
+
+ArcticStormRising.html:
+  ArcticStormRising.jpg → arcticstormrising.jpg
+  ArcticStormRising.jpg → arcticstormrising.jpg
+  IceHunt.jpg → icehunt.jpg
+
+Asura.html:
+  Asura.jpg → asura.jpg
+
+AtomicHabits.html:
+  AtomicHabits.jpg → atomichabits.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+  The5AMClub.jpg → the5amclub.jpg
+  ThePowerofHabit.jpg → thepowerofhabit.jpg
+
+AttitudeIsEverything.html:
+  Attitudeiseverything.jpg → attitudeiseverything.jpg
+  Attitudeiseverything.jpg → attitudeiseverything.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+
+BatatyachiChal.html:
+  BatatyachiChal.jpg → batatyachichal.jpg
+  BatatyachiChal.jpg → batatyachichal.jpg
+  VyaktianiValli.jpg → vyaktianivalli.jpg
+  Apurvai.jpg → apurvai.jpg
+  OnefortheRoad.jpg → onefortheroad.jpg
+
+Congo.html:
+  Congo.jpg → congo.jpg
+  Congo.jpg → congo.jpg
+  Amazonia.jpg → amazonia.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+  TheAndromedaStrain.jpg → theandromedastrain.jpg
+
+DeepFathom.html:
+  DeepFathom.jpg → deepfathom.jpg
+  DeepFathom.jpg → deepfathom.jpg
+  IceHunt.jpg → icehunt.jpg
+  Amazonia.jpg → amazonia.jpg
+
+DoEpicShit.html:
+  TheAlmanackofNavalRavikant.jpg → thealmanackofnavalravikant.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+
+Excavation.html:
+  Excavation.jpg → excavation.jpg
+  Excavation.jpg → excavation.jpg
+  Subterranean.jpg → subterranean.jpg
+  Amazonia.jpg → amazonia.jpg
+  TheLostCity.jpg → thelostcity.jpg
+
+HowToWinFriends.html:
+  HowToWinFriends.jpg → howtowinfriends.jpg
+  HowToWinFriends.jpg → howtowinfriends.jpg
+  The7Habits.jpg → the7habits.jpg
+  Influence.jpg → influence.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+
+IceHunt.html:
+  IceHunt.jpg → icehunt.jpg
+  IceHunt.jpg → icehunt.jpg
+  DeepFathom.jpg → deepfathom.jpg
+  Subterranean.jpg → subterranean.jpg
+  ArcticStormRising.jpg → arcticstormrising.jpg
+
+Influence.html:
+  TheLawsofHumanNature.jpg → thelawsofhumannature.jpg
+  ThinkingFastandSlow.jpg → thinkingfastandslow.jpg
+
+JurassicPark.html:
+  JurassicPark.jpg → jurassicpark.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+  Congo.jpg → congo.jpg
+  Amazonia.jpg → amazonia.jpg
+
+Mrutyunjay.html:
+  Mrutyunjay.jpg → mrutyunjay.jpg
+  Mrutyunjay.jpg → mrutyunjay.jpg
+  Yayati.jpg → yayati.jpg
+  Asura.jpg → asura.jpg
+
+OneForTheRoad.html:
+  OneForTheRoad.jpg → onefortheroad.jpg
+  OneForTheRoad.jpg → onefortheroad.jpg
+  Partner.jpg → partner.jpg
+
+Panipat.html:
+  Panipat.jpg → panipat.jpg
+  Panipat.jpg → panipat.jpg
+  Sambhaji.jpg → sambhaji.jpg
+  Swami.jpg → swami.jpg
+  Rau.jpg → rau.jpg
+
+Partner.html:
+  Partner.jpg → partner.jpg
+  Partner.jpg → partner.jpg
+  Vapurza.jpg → vapurza.jpg
+  Yayati.jpg → yayati.jpg
+  Panipat.jpg → panipat.jpg
+
+Ravana.html:
+  Mrutyunjay.jpg → mrutyunjay.jpg
+  Asura.jpg → asura.jpg
+
+ScionOfIkshvaku.html:
+  ScionOfIkshvaku.jpg → scionofikshvaku.jpg
+  ScionOfIkshvaku.jpg → scionofikshvaku.jpg
+  TheOathoftheVayuputras.jpg → theoathofthevayuputras.jpg
+  Asura.jpg → asura.jpg
+
+Secreateofnagas.html:
+  SecreateOfNagas.jpg → secreateofnagas.jpg
+  SecreateOfNagas.jpg → secreateofnagas.jpg
+  TheOathoftheVayuputras.jpg → theoathofthevayuputras.jpg
+  ScionofIkshvaku.jpg → scionofikshvaku.jpg
+
+Siddhartha.html:
+  Siddhartha.jpg → siddhartha.jpg
+  Siddhartha.jpg → siddhartha.jpg
+  TheAlchemist.jpg → thealchemist.jpg
+
+Subterranean.html:
+  Subterranean.jpg → subterranean.jpg
+  Subterranean.jpg → subterranean.jpg
+  Excavation.jpg → excavation.jpg
+  Amazonia.jpg → amazonia.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+
+template.html:
+  Amazonia.jpg → amazonia.jpg
+
+The5AMClub.html:
+  The5AMClub.jpg → the5amclub.jpg
+  The5AMClub.jpg → the5amclub.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+  TheMiracleMorning.jpg → themiraclemorning.jpg
+
+The7Habits.html:
+  The7Habits.jpg → the7habits.jpg
+  The7Habits.jpg → the7habits.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+
+TheAlchemist.html:
+  TheAlchemist.jpg → thealchemist.jpg
+  TheAlchemist.jpg → thealchemist.jpg
+  Siddhartha.jpg → siddhartha.jpg
+
+TheAlmanackOfNavalRavikant.html:
+  ThePsychologyofMoney.jpg → thepsychologyofmoney.jpg
+
+TheAndromedaStrain.html:
+  TheAndromedaStrain.jpg → theandromedastrain.jpg
+  TheAndromedaStrain.jpg → theandromedastrain.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+
+TheBigQuestionsOfLife.html:
+  MansSearchforMeaning.jpg → manssearchformeaning.jpg
+
+TheCompoundEffect.html:
+  AtomicHabits.jpg → atomichabits.jpg
+
+TheDaVinciCode.html:
+  TheDaVinciCode.jpg → thedavincicode.jpg
+  TheDaVinciCode.jpg → thedavincicode.jpg
+  AngelsandDemons.jpg → angelsanddemons.jpg
+  TheLastTemplar.jpg → thelasttemplar.jpg
+
+TheGreatZooOfChina.html:
+  TheGreatZooOfChina.jpg → thegreatzooofchina.jpg
+  TheGreatZooOfChina.jpg → thegreatzooofchina.jpg
+  AltarofEden.jpg → altarofeden.jpg
+  JurassicPark.jpg → jurassicpark.jpg
+
+TheImmortalsOfMeluha.html:
+  Asura.jpg → asura.jpg
+
+TheLastTemplar.html:
+  TheLastTemplar.jpg → thelasttemplar.jpg
+  TheLastTemplar.jpg → thelasttemplar.jpg
+  TheDaVinciCode.jpg → thedavincicode.jpg
+
+TheLawsOfHumanNature.html:
+  48LawsofPower.jpg → 48lawsofpower.jpg
+  Influence.jpg → influence.jpg
+  HowtoWinFriends.jpg → howtowinfriends.jpg
+
+TheLostCity.html:
+  TheLostCity.jpg → thelostcity.jpg
+  TheLostCity.jpg → thelostcity.jpg
+  DeepFathom.jpg → deepfathom.jpg
+  Excavation.jpg → excavation.jpg
+
+TheMiracleMorning.html:
+  TheMiracleMorning.jpg → themiraclemorning.jpg
+  TheMiracleMorning.jpg → themiraclemorning.jpg
+  The5AMClub.jpg → the5amclub.jpg
+  AtomicHabits.jpg → atomichabits.jpg
+
+TheOathOfTheVayuputras.html:
+  TheOathOfTheVayuputras.jpg → theoathofthevayuputras.jpg
+  TheOathOfTheVayuputras.jpg → theoathofthevayuputras.jpg
+  TheImmortalsofMeluha.jpg → theimmortalsofmeluha.jpg
+  ScionofIkshvaku.jpg → scionofikshvaku.jpg
+  Asura.jpg → asura.jpg
+
+ThePowerOfHabit.html:
+  AtomicHabits.jpg → atomichabits.jpg
+
+TheSubtleArt.html:
+  101Essays.jpg → 101essays.jpg
+
+ThinkingFastAndSlow.html:
+  Influence.jpg → influence.jpg
+
+Vapurza.html:
+  Vapurza.jpg → vapurza.jpg
+  Vapurza.jpg → vapurza.jpg
+  Partner.jpg → partner.jpg
+  VyaktiAniValli.jpg → vyaktianivalli.jpg
+
+VyaktiAniValli.html:
+  VyaktiAniValli.jpg → vyaktianivalli.jpg
+  VyaktiAniValli.jpg → vyaktianivalli.jpg
+
+Yayati.html:
+  Yayati.jpg → yayati.jpg
+  Yayati.jpg → yayati.jpg
+  Mrutyunjay.jpg → mrutyunjay.jpg
+  Partner.jpg → partner.jpg
+  Panipat.jpg → panipat.jpg
