@@ -29,6 +29,7 @@
 | Mrutyunjay (मृत्युंजय) | Shivaji Sawant | Marathi | Marathi Literature | ISBN Not available |
 | One for the Road | V.P. Kale | Marathi | Marathi Literature | ISBN Not available |
 | Panipat (पानिपत) | Vishwas Patil | Marathi | Historical Fiction | ISBN Not available |
+| Rau (राऊ) | N.S. Inamdar | Marathi | Historical Fiction | ISBN Not available |
 | Partner | V.P. Kale | Marathi | Marathi Literature & Social Fiction | ISBN Not available |
 | Ravana Raja Rakshasancha | Sharad Tandale | Marathi | Mythology & Retelling | ISBN Not available |
 | Scion of Ikshvaku | Amish Tripathi | English | Mythology & Epic Fantasy | 978-9385152146 |
@@ -60,4 +61,5 @@
 | Yayati (ययाति) | V.S. Khandekar | Marathi | Marathi Classic & Mythology | ISBN Not available |
 | Wings of Fire | Dr. APJ Abdul Kalam | English | Biography & Memoir | 978-8173711466 |
 | The Fourth Protocol | Frederick Forsyth | English | Mystery & Thriller | ISBN Not available |
+| Swami | Ranjit Desai | Marathi | Historical Fiction | ISBN Not available |
 
