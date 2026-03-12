@@ -72,7 +72,7 @@ def typed_animation(words: list[str] | None = None, height: int = 50) -> None:
 
             /* Static prefix text */
             .prefix {{
-                font-size: 1.6rem;
+                font-size: clamp(1.1rem, 1.5vw + 0.4rem, 1.6rem);
                 color: #e7f2f7;              /* --text */
                 white-space: nowrap;
             }}
@@ -81,14 +81,14 @@ def typed_animation(words: list[str] | None = None, height: int = 50) -> None:
             .typed-output {{
                 color: #1387c1;              /* --accent */
                 font-weight: 700;
-                font-size: 1.6rem;
+                font-size: clamp(1.1rem, 1.5vw + 0.4rem, 1.6rem);
                 white-space: nowrap;
             }}
 
             /* Blinking cursor pipe */
             .cursor {{
                 color: #1387c1;
-                font-size: 1.6rem;
+                font-size: clamp(1.1rem, 1.5vw + 0.4rem, 1.6rem);
                 font-weight: 400;
                 animation: blink 0.7s infinite;
             }}

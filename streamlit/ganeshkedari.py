@@ -210,9 +210,11 @@ def render_hero() -> None:
 
     with hero_left:
         # -- Greeting ------------------------------------------------------
+        # Uses .hero-greeting class from style.css which applies
+        # clamp() for fluid scaling across all screen sizes.
         st.markdown(
             f"""
-            <h1 style="font-size:2.8rem; margin-bottom:0.2rem;">
+            <h1 class="hero-greeting">
                 Hello, I'm
                 <span style="color:var(--accent);">{PERSONAL['name']}</span>
             </h1>
@@ -239,9 +241,12 @@ def render_hero() -> None:
         )
 
         # -- Call-to-action buttons ----------------------------------------
+        # Uses .hero-cta-row class from style.css — flexbox wrapper
+        # that wraps gracefully: side-by-side on desktop, stacked
+        # full-width on mobile (≤480 px).
         st.markdown(
             f"""
-            <div style="margin-top:1.2rem;">
+            <div class="hero-cta-row">
                 <a href="#experience" class="btn-primary-custom">
                     View My Work
                 </a>
@@ -355,16 +360,18 @@ def render_contact() -> None:
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
     # -- Contact blurb & CTA button ----------------------------------------
+    # Uses .contact-blurb class from style.css — fluid font-size via
+    # clamp() and max-width: min(600px, 100%) to fit any viewport.
     st.markdown(
         f"""
-        <p style="font-size:1.05rem; max-width:600px;">
+        <p class="contact-blurb">
             {PERSONAL['contact_blurb']}
         </p>
         <div style="margin:1rem 0;">
             <a href="{PERSONAL['contact_url']}"
                target="_blank" rel="noopener noreferrer"
                class="btn-primary-custom"
-               style="font-size:1.05rem; padding:0.65rem 2rem;">
+               style="padding:0.65rem 2rem;">
                💬&ensp;Book a Conversation
             </a>
         </div>
