@@ -3,3 +3,6 @@ tmpclaude-*-cwd
 
 # IDE
 .vscode/
+
+# Streamlit virtual environment
+streamlit/venv/
