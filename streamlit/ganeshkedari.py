@@ -12,12 +12,15 @@ import base64
 import streamlit as st
 from pathlib import Path
 
+# Base directory = folder containing this script
+BASE_DIR = Path(__file__).resolve().parent
+
 # ─────────────────────────────────────────────
 # 0. PAGE CONFIG
 # ─────────────────────────────────────────────
 st.set_page_config(
     page_title="Ganesh Kedari | Resume",
-    page_icon="assets/r2d2.png",
+    page_icon=str(BASE_DIR / "assets" / "r2d2.png"),
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -28,13 +31,13 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 def img_to_base64(path: str) -> str:
     """Return base64-encoded string of a local image file."""
-    data = Path(path).read_bytes()
+    data = (BASE_DIR / path).read_bytes()
     return base64.b64encode(data).decode()
 
 
 def get_pdf_bytes(path: str) -> bytes:
     """Return raw bytes of a file (used for download button)."""
-    return Path(path).read_bytes()
+    return (BASE_DIR / path).read_bytes()
 
 
 # ─────────────────────────────────────────────
