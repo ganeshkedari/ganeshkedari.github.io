@@ -1,0 +1,485 @@
+/*
+ * ============================================================================
+ * Ganesh Kedari — Streamlit Resume App : Global Stylesheet
+ * ============================================================================
+ *
+ * This file contains ALL custom CSS used by the Streamlit resume application.
+ * It mirrors the dark theme from the original portfolio site (index.html).
+ *
+ * Colour palette
+ * ──────────────
+ *   --bg        #000000   Main background (pure black)
+ *   --surface   #141f26   Cards / sidebar / elevated surfaces
+ *   --text      #e7f2f7   Body text
+ *   --heading   #ffffff   Headings
+ *   --accent    #1387c1   Brand blue (buttons, links, highlights)
+ *   --contrast  #ffffff   Text on accent-coloured backgrounds
+ *
+ * Fonts (loaded from Google Fonts)
+ * ────────────────────────────────
+ *   Body text  → Roboto
+ *   Headings   → Raleway
+ *   Navigation → Poppins
+ *
+ * Sections
+ * ────────
+ *   1. Google Fonts import
+ *   2. CSS custom properties
+ *   3. Global overrides (body, headings)
+ *   4. Sidebar
+ *   5. Streamlit chrome hiding
+ *   6. Links & buttons
+ *   7. Section dividers
+ *   8. Skill bars
+ *   9. Timeline (experience / education)
+ *  10. Images (profile, hero, about)
+ *  11. Social icons
+ *  12. Typed animation (in-page; iframe has its own styles)
+ *  13. Quote block
+ *  14. Footer
+ *  15. Misc (expander, tabs, scroll-margin)
+ * ============================================================================
+ */
+
+
+/* ═══════════════════════════════════════════
+   1. GOOGLE FONTS
+   ═══════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ═══════════════════════════════════════════
+   2. CSS CUSTOM PROPERTIES
+   ═══════════════════════════════════════════ */
+:root {
+    --bg:       #000000;
+    --surface:  #141f26;
+    --text:     #e7f2f7;
+    --heading:  #ffffff;
+    --accent:   #1387c1;
+    --contrast: #ffffff;
+}
+
+
+/* ═══════════════════════════════════════════
+   3. GLOBAL OVERRIDES
+   ═══════════════════════════════════════════ */
+
+/* Set dark background and Roboto font across all Streamlit containers */
+html, body,
+[data-testid="stAppViewContainer"],
+[data-testid="stApp"] {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Headings use Raleway */
+h1, h2, h3, h4, h5, h6,
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3 {
+    font-family: 'Raleway', sans-serif !important;
+    color: var(--heading) !important;
+}
+
+
+/* ═══════════════════════════════════════════
+   4. SIDEBAR
+   ═══════════════════════════════════════════ */
+
+/* Dark surface background & Poppins font for the sidebar */
+section[data-testid="stSidebar"] {
+    background-color: var(--surface) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Ensure all sidebar text inherits the light text colour */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] a {
+    color: var(--text) !important;
+}
+
+/* Sidebar navigation link styling */
+.sidebar-nav a {
+    display: block;
+    padding: 0.45rem 0.8rem;
+    margin-bottom: 0.3rem;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text) !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+}
+.sidebar-nav a:hover {
+    background: rgba(19, 135, 193, 0.15);
+    color: var(--accent) !important;
+    padding-left: 1.1rem;
+}
+
+
+/* ═══════════════════════════════════════════
+   5. STREAMLIT CHROME HIDING
+   ═══════════════════════════════════════════ */
+
+/* Hide the default Streamlit hamburger menu, footer, and
+   make the header bar transparent so our dark BG shows through. */
+#MainMenu            { visibility: hidden; }
+footer               { visibility: hidden; }
+header[data-testid="stHeader"] {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+
+/* ═══════════════════════════════════════════
+   6. LINKS & BUTTONS
+   ═══════════════════════════════════════════ */
+
+/* All links default to accent blue */
+a       { color: var(--accent) !important; text-decoration: none; }
+a:hover { color: #15a3e6 !important; text-decoration: underline; }
+
+/* Override Streamlit's native button and download-button colours */
+.stButton > button,
+.stDownloadButton > button {
+    background-color: var(--accent) !important;
+    color: var(--contrast) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1.6rem !important;
+    transition: background 0.3s ease;
+}
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background-color: #15a3e6 !important;
+}
+
+/* Custom HTML outline button (used for "Get In Touch") */
+.btn-outline-custom {
+    display: inline-block;
+    padding: 0.5rem 1.6rem;
+    border: 2px solid var(--accent);
+    color: var(--accent) !important;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+}
+.btn-outline-custom:hover {
+    background-color: var(--accent);
+    color: var(--contrast) !important;
+}
+
+/* Custom HTML primary button (used for "View My Work") */
+.btn-primary-custom {
+    display: inline-block;
+    padding: 0.5rem 1.6rem;
+    background-color: var(--accent);
+    color: var(--contrast) !important;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: background 0.3s ease;
+}
+.btn-primary-custom:hover {
+    background-color: #15a3e6;
+}
+
+
+/* ═══════════════════════════════════════════
+   7. SECTION DIVIDERS
+   ═══════════════════════════════════════════ */
+
+/* Short accent-coloured bar placed below section headings */
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    border: none;
+    margin: 0.5rem 0 1.5rem 0;
+    border-radius: 2px;
+}
+
+
+/* ═══════════════════════════════════════════
+   8. SKILL BARS
+   ═══════════════════════════════════════════ */
+
+.skill-bar-container { margin-bottom: 1.2rem; }
+
+.skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    color: var(--text);
+}
+
+/* Semi-transparent track */
+.skill-bar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    height: 12px;
+    overflow: hidden;
+}
+
+/* Gradient fill animates width via inline style */
+.skill-bar-fill {
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(90deg, var(--accent), #15a3e6);
+    transition: width 1.2s ease-in-out;
+}
+
+
+/* ═══════════════════════════════════════════
+   9. TIMELINE (Experience / Education)
+   ═══════════════════════════════════════════ */
+
+/* Vertical line running along the left edge */
+.timeline {
+    position: relative;
+    padding-left: 28px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent);
+}
+
+/* Individual timeline card */
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1.2rem 1.4rem;
+    background: var(--surface);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+}
+
+/* Circular dot at the start of each timeline card */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 2px solid var(--bg);
+}
+
+.timeline-item h4 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1.15rem;
+    color: var(--heading) !important;
+}
+
+/* Badge-style period label */
+.timeline-item .period {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--contrast);
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Organisation / institution name */
+.timeline-item .org {
+    font-style: italic;
+    color: #9db8c7;
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+}
+
+.timeline-item ul  { padding-left: 1.1rem; margin-top: 0.5rem; }
+.timeline-item li  {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 0.35rem;
+    color: var(--text);
+}
+
+
+/* ═══════════════════════════════════════════
+   10. IMAGES
+   ═══════════════════════════════════════════ */
+
+/* Circular profile image shown in the sidebar */
+.profile-img {
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.profile-img:hover { transform: scale(1.05); }
+
+/* Hero section profile (rounded rectangle, no border) */
+.hero-profile-img {
+    border-radius: 16px;
+    border: none;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    box-shadow: none;
+}
+.hero-profile-img:hover { transform: scale(1.03); }
+
+/* About section image (currently unused but kept for re-activation) */
+.about-img {
+    border-radius: 14px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 6px 24px rgba(19, 135, 193, 0.15);
+}
+
+/* Word cloud image */
+.word-cloud {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+
+/* ═══════════════════════════════════════════
+   11. SOCIAL ICONS
+   ═══════════════════════════════════════════ */
+
+/* Row container for social icon circles */
+.social-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+}
+
+/* Individual circular social icon */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--accent) !important;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(19, 135, 193, 0.3);
+}
+.social-icon:hover {
+    background: var(--accent);
+    color: var(--contrast) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(19, 135, 193, 0.4);
+}
+
+
+/* ═══════════════════════════════════════════
+   12. TYPED ANIMATION (in-page fallback)
+   ═══════════════════════════════════════════ */
+
+/* Note: The actual typewriter runs inside an iframe
+   rendered via st.components.v1.html().  These classes
+   are kept here as a fallback for the in-page version. */
+.typed-text {
+    color: var(--accent);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.typed-cursor {
+    color: var(--accent);
+    font-size: 1.6rem;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+}
+
+
+/* ═══════════════════════════════════════════
+   13. QUOTE BLOCK
+   ═══════════════════════════════════════════ */
+
+/* Isaac Newton quote in the hero section */
+.newton-quote {
+    font-style: italic;
+    color: #9db8c7;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    border-left: 3px solid var(--accent);
+    padding-left: 1rem;
+    margin: 1.2rem 0;
+}
+.newton-quote .attribution {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.5rem;
+}
+
+
+/* ═══════════════════════════════════════════
+   14. FOOTER
+   ═══════════════════════════════════════════ */
+
+.footer-container {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 3rem;
+    color: #9db8c7;
+}
+
+
+/* ═══════════════════════════════════════════
+   15. MISC
+   ═══════════════════════════════════════════ */
+
+/* Smooth scrolling anchor offset so content isn't hidden behind header */
+[id] { scroll-margin-top: 2rem; }
+
+/* Streamlit expander */
+details summary {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--accent) !important;
+}
+
+/* Streamlit tabs */
+.stTabs [data-baseweb="tab-list"] button {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--text) !important;
+}
+.stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
+    color: var(--accent) !important;
+    border-bottom-color: var(--accent) !important;
+}
