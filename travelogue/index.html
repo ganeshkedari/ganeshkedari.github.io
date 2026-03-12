@@ -424,24 +424,9 @@
   <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
   <script src="js/front.js"></script>
 
-  <!-- SVG Sprite Injection Script -->
+  <!-- SVG Sprite Injection Script (externalized for security - no innerHTML) -->
+  <script src="js/svg-sprite.js"></script>
   <script>
-    /**
-     * Injects SVG sprite into the DOM for icon usage
-     * @param {string} path - URL to the SVG sprite file
-     */
-    function injectSvgSprite(path) {
-      var ajax = new XMLHttpRequest();
-      ajax.open("GET", path, true);
-      ajax.send();
-      ajax.onload = function (e) {
-        var div = document.createElement("div");
-        div.className = 'd-none';
-        div.innerHTML = ajax.responseText;
-        document.body.insertBefore(div, document.body.childNodes[0]);
-      }
-    }
-    // Load SVG sprite from BootstrapTemple CDN
     injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
   </script>
 
